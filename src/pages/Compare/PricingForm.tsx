@@ -7,6 +7,7 @@ import * as yup from 'yup';
 import PricingResults from './PricingResults';
 import NavbarA from '@/Components/Home/NavBar';
 import Footer from '@/Components/Home/Footer';
+import type { Resolver } from "react-hook-form";
 
 interface PricingFormData {
   firstName: string;
@@ -42,8 +43,9 @@ const schema = yup.object().shape({
     .required('Le téléphone est requis')
     .matches(/^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/, 'Numéro de téléphone français invalide')
     .test('phone-length', 'Numéro de téléphone trop court', (value) => {
-      const digitsOnly = value?.replace(/[\s.-]/g, '');
-      return digitsOnly && digitsOnly.length >= 10;
+      if (!value) return false;
+      const digitsOnly = value.replace(/[\s.-]/g, '');
+      return digitsOnly.length >= 10;
     }),
   wantsContact: yup.boolean()
     .oneOf([true], 'Vous devez accepter d\'être contacté pour continuer')
@@ -55,8 +57,8 @@ const schema = yup.object().shape({
   startDate: yup.string().required('La date d\'effet est requise'),
   regime: yup.string().required('Le régime est requis'),
   hasSpouse: yup.boolean().default(false),
-  spouseBirthDate: yup.string().nullable(),
-  spouseRegime: yup.string().nullable(),
+  spouseBirthDate: yup.string().nullable().notRequired(),
+  spouseRegime: yup.string().nullable().notRequired(),
   childrenCount: yup.number().default(0).min(0).max(6),
   productType: yup.string().default('sante'),
   coverageLevel: yup
@@ -81,16 +83,17 @@ const PricingForm: React.FC = () => {
   const [showSuccessAnimation, setShowSuccessAnimation] = useState(false);
   const [autoScrollProgress, setAutoScrollProgress] = useState(0);
   
-  const { register, handleSubmit, formState: { errors }, watch, trigger, reset } = useForm<PricingFormData>({
-    resolver: yupResolver(schema),
+const { register, handleSubmit, formState: { errors }, watch, trigger, reset } =
+  useForm<PricingFormData>({
+    resolver: yupResolver(schema) as unknown as Resolver<PricingFormData>,
     defaultValues: {
-      productType: 'sante',
-      regime: 'SS',
+      productType: "sante",
+      regime: "SS",
       childrenCount: 0,
       hasSpouse: false,
-      coverageLevel: 'moyen',
-      wantsContact: false
-    }
+      coverageLevel: "moyen",
+      wantsContact: false,
+    },
   });
   
   const hasSpouse = watch('hasSpouse');

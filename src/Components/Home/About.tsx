@@ -1,6 +1,6 @@
 //mport img1 from "../../assets/images/about.jpg";
-import img1 from "../../assets/mutuelle-sante/images/about.jpg";
-
+import Image from "next/image";
+import img1 from "../../../public/mutuelle-sante/images/about.jpg";
 import { motion } from "framer-motion";
 export default function About() {
     return (
@@ -40,7 +40,7 @@ export default function About() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <img
+          <Image
             src={img1}
             alt="Notre mission"
             className="rounded-lg shadow-lg object-cover w-full max-w-md"

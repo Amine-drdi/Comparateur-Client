@@ -19,7 +19,7 @@ import digitalInsure from "../Image/Partenaire/logo_digital_insure.png"
 import sollyAzar from "../Image/Partenaire/logo_solly.png"
 import ikapital from "../Image/Partenaire/logo-ikapital-investissement-cabinet.webp"
 import magellim from "../Image/Partenaire/magellim.png"
-import equitim from "../Image/Partenaire/equitim1_logo.jfif"
+import equitim from "../Image/Partenaire/equitim1_logo.jpg"
 import foncierProsper from "../Image/Partenaire/foncier.png"
 import exculivePartners from "../Image/Partenaire/exculive parteners.png"
 

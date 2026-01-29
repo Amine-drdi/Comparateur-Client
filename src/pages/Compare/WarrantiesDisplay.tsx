@@ -19,9 +19,10 @@ interface WarrantyItem {
 }
 
 interface WarrantiesDisplayProps {
-  warranties: Record<string, WarrantyItem>;
+  warranties?: Record<string, WarrantyItem> | null;
   provider: string;
 }
+
 
 const WarrantiesDisplay: React.FC<WarrantiesDisplayProps> = ({ warranties, provider }) => {
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
@@ -29,8 +30,9 @@ const WarrantiesDisplay: React.FC<WarrantiesDisplayProps> = ({ warranties, provi
   const [showOnlyIncluded, setShowOnlyIncluded] = useState(false);
 
   // Convertir l'objet en tableau et trier par position
-  const warrantyArray = Object.values(warranties)
-    .sort((a, b) => parseInt(a.pos || '999') - parseInt(b.pos || '999'));
+const warrantyArray = Object.values(warranties ?? {})
+  .sort((a, b) => parseInt(a.pos || "999") - parseInt(b.pos || "999"));
+
 
   // Filtrer les garanties
   const filteredWarranties = warrantyArray.filter(warranty => {

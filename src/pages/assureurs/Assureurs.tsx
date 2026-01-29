@@ -1,10 +1,33 @@
 import React, { useState } from 'react'
-import { partenaire } from '../../assets/data/Partenaire'
+import { partenaire } from '../../../public/data/Partenaire'
+
+// Types pour les partenaires
+interface Partner {
+  id: number;
+  name: string;
+  logo: string;
+  description: string;
+  category: string;
+  specialities: string[];
+  founded: number | string;
+  employees: number | string;
+  coverage: string;
+  website: string;
+}
+
+interface PartnerDetailCardProps {
+  partner: Partner;
+}
+
+interface PartnerDetailModalProps {
+  partner: Partner;
+  onClose: () => void;
+}
 
 const Assureurs = () => {
-  const [selectedCategory, setSelectedCategory] = useState('Tous')
-  const [searchTerm, setSearchTerm] = useState('')
-  const [activePartner, setActivePartner] = useState(null)
+  const [selectedCategory, setSelectedCategory] = useState<string>('Tous')
+  const [searchTerm, setSearchTerm] = useState<string>('')
+  const [activePartner, setActivePartner] = useState<Partner | null>(null)
 
   // Catégories uniques basées sur les colonnes du tableau Excel
   const categories = [
@@ -18,7 +41,7 @@ const Assureurs = () => {
   ]
 
   // Filtrage des partenaires
-  const filteredPartners = partenaire.filter(partner => {
+  const filteredPartners = partenaire.filter((partner: Partner) => {
     const matchesCategory = selectedCategory === 'Tous' || 
                           partner.specialities.includes(selectedCategory)
     const matchesSearch = partner.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -125,7 +148,7 @@ const Assureurs = () => {
   )
 
   // Carte partenaire détaillée
-  const PartnerDetailCard = ({ partner }) => (
+  const PartnerDetailCard = ({ partner }: PartnerDetailCardProps) => (
     <div className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-200">
       <div className="relative h-40 bg-gradient-to-r from-slate-50 to-blue-50 p-6 flex items-center justify-between border-b border-gray-100">
         <div className="bg-white rounded-xl p-3 flex items-center justify-center shadow-sm border border-gray-100">
@@ -203,7 +226,7 @@ const Assureurs = () => {
   )
 
   // Modal de détail du partenaire
-  const PartnerDetailModal = ({ partner, onClose }) => (
+  const PartnerDetailModal = ({ partner, onClose }: PartnerDetailModalProps) => (
     <div className="fixed inset-0 bg-black/70 backdrop-blur-md z-50 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
         <div className="sticky top-0 bg-white border-b border-gray-200 p-6 flex justify-between items-center rounded-t-2xl">
@@ -211,6 +234,7 @@ const Assureurs = () => {
           <button 
             onClick={onClose}
             className="p-2 rounded-full hover:bg-gray-100 transition-colors"
+            aria-label="Fermer"
           >
             <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -296,7 +320,7 @@ const Assureurs = () => {
         
         <div className="container mx-auto px-6 py-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredPartners.map(partner => (
+            {filteredPartners.map((partner: Partner) => (
               <PartnerDetailCard key={partner.id} partner={partner} />
             ))}
           </div>

@@ -9,6 +9,7 @@ import {
   FaMapMarkerAlt,
   FaUserTie
 } from "react-icons/fa";
+import Image from "next/image";
 
 import Image1 from "../../../public/Accueil/images/rembourssement.png";
 import Image2 from "../../../public/Accueil/images/rembourssement2.png";
@@ -19,7 +20,7 @@ export default function ComprendreMonDevis() {
       {/* Hero avec fond dégradé */}
       <section className="bg-gradient-to-r from-blue-50 to-indigo-50 py-16 px-4 text-center">
         <div className="max-w-4xl mx-auto">
-           <span className="bg-yellow-300 text-gray-800 px-3 py-1 rounded-md text-sm font-medium">           
+          <span className="bg-yellow-300 text-gray-800 px-3 py-1 rounded-md text-sm font-medium">           
             Que devez-vous savoir sur un devis de mutuelle ?
           </span>
           <h2 className="text-4xl font-bold text-gray-900 mt-6 mb-6">
@@ -110,10 +111,13 @@ export default function ComprendreMonDevis() {
           <div className="md:w-1/2 flex justify-center">
             <div className="relative">
               <div className="absolute -inset-4 bg-blue-200 rounded-2xl rotate-3 opacity-50"></div>
-              <img
+              <Image
                 src={Image1}
                 alt="Femme remboursée heureuse"
                 className="relative w-full max-w-md rounded-2xl shadow-xl z-10"
+                width={500}
+                height={300}
+                priority={false}
               />
             </div>
           </div>
@@ -126,10 +130,13 @@ export default function ComprendreMonDevis() {
           <div className="md:w-1/2 flex justify-center">
             <div className="relative">
               <div className="absolute -inset-4 bg-indigo-200 rounded-2xl -rotate-3 opacity-50"></div>
-              <img
+              <Image
                 src={Image2}
                 alt="Homme en colère sans remboursement"
                 className="relative w-full max-w-md rounded-2xl shadow-xl z-10"
+                width={500}
+                height={300}
+                priority={false}
               />
             </div>
           </div>

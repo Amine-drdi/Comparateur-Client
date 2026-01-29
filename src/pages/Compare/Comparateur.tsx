@@ -13,7 +13,7 @@ import assurance from '../../assets/mutuelle-sante/images/assurance.png';
 import nomIcon from "../../assets/mutuelle-sante/images/nom.png";
 import mailIcon from "../../assets/mutuelle-sante/images/mail.png";
 import phoneIcon from "../../assets/mutuelle-sante/images/phone.png";
-import { useNavigate } from 'react-router-dom';
+
 import SubscriptionModal from './SubscriptionModal';
 import April from "../../../public/images/april-logo.png"
 interface FormData {

@@ -3,18 +3,15 @@ import {
   FaBars,
   FaChevronDown,
   FaEnvelope,
-  FaHome,
   FaPhone,
   FaTimes,
 } from "react-icons/fa";
 import { HiOutlineHeart, HiOutlineShieldCheck, HiOutlineStar, HiOutlineUsers } from "react-icons/hi";
 import { MdCompare, MdHealthAndSafety, MdLocalHospital, MdVisibility } from "react-icons/md";
 import { GiFishingPole } from "react-icons/gi";
-import logo from "../../assets/Image/logo.png";
-import { Link, useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { useAuth } from "../../context/AuthContext";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
 
 type DropdownItem = {
   label: string;
@@ -35,11 +32,7 @@ const NavbarA: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
-
-  const { isAuthenticated, logout } = useAuth();
-  const navigate = useNavigate();
-  const user = useSelector((state: any) => state.auth.user);
+  const [isMobile, setIsMobile] = useState(false);
 
   const closeTimerRef = useRef<number | null>(null);
 
@@ -51,6 +44,9 @@ const NavbarA: React.FC = () => {
       setIsMobile(window.innerWidth < 640);
     };
     
+    // Initialiser isMobile après le montage du composant
+    setIsMobile(window.innerWidth < 640);
+    
     window.addEventListener('resize', handleResize);
     
     return () => {
@@ -58,11 +54,6 @@ const NavbarA: React.FC = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-  const handleLogout = () => {
-    logout();
-    navigate("/");
-  };
 
   const toggleMobileMenu = () => setIsMobileMenuOpen((v) => !v);
 
@@ -239,16 +230,21 @@ const NavbarA: React.FC = () => {
         <div className="h-0.5 bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent animate-pulse"></div>
       </div>
 
-      <div className="max-w-7xl ml-14 ">
+      <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 hover:scale-105 transition-all duration-300 " onClick={closeMobileMenu}>
+          <Link href="/" className="flex items-center gap-2 hover:scale-105 transition-all duration-300" onClick={closeMobileMenu}>
             <motion.div className="relative" whileHover={{ rotate: 5 }}>
-              <img 
-                src={logo} 
-                alt="logo" 
-                className="w-[75%] h-[40%] filter drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-300 " 
-              />
+              <div className="relative w-32 h-12">
+                {/* Remplacez par votre logo */}
+                <Image
+                  src="/images/logo.png" // Chemin vers votre logo dans public/
+                  alt="logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
             </motion.div>
           </Link>
 
@@ -267,7 +263,7 @@ const NavbarA: React.FC = () => {
                   if (!hasDropdown) {
                     return (
                       <div key={key} className="relative">
-                        <Link to={dropdown.link || "/"}>
+                        <Link href={dropdown.link || "/"}>
                           <motion.button
                             className="flex items-center gap-1 px-1 xl:px-4 py-2 xl:py-3 text-gray-700 hover:text-blue-600 transition-all duration-300 font-semibold text-sm xl:text-base tracking-wide relative overflow-hidden rounded-xl group"
                             whileHover={{ y: -2 }}
@@ -335,7 +331,7 @@ const NavbarA: React.FC = () => {
                           {activeSection.items.map((item, idx) => (
                             <Link
                               key={idx}
-                              to={item.link}
+                              href={item.link}
                               className="text-sm font-medium text-gray-800 hover:text-blue-600 transition-colors py-1"
                               onClick={() => {
                                 setIsDropdownOpen(false);
@@ -357,7 +353,7 @@ const NavbarA: React.FC = () => {
                         </div>
 
                         <Link
-                          to="/comparateur-mutuelle-santé"
+                          href="/comparateur-mutuelle-santé"
                           className="
                             mt-auto inline-flex items-center justify-center
                             rounded-xl bg-green-600 px-4 py-3
@@ -384,27 +380,20 @@ const NavbarA: React.FC = () => {
           <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                to="/comparateur-mutuelle-santé"
+                href="/comparateur-mutuelle-santé"
                 className="hidden sm:flex items-center justify-center w-28 sm:w-32 md:w-36 px-3 py-2.5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 font-bold text-xs sm:text-sm"
               >
                 <span className="whitespace-nowrap">DEVIS GRATUIT</span>
               </Link>
             </motion.div>
 
-           {/* {isAuthenticated ? (
-              <div className="relative group">
-                <button className="flex items-center gap-2 px-3 py-2 rounded-lg bg-blue-50 text-blue-600 hover:bg-blue-100 transition-colors">
-                  <span className="font-medium text-sm">{user?.name || "Mon compte"}</span>
-                </button>
-              </div>
-            ) : (
-              <Link
-                to="/login"
-                className="hidden sm:inline-flex items-center px-4 py-2.5 rounded-lg border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm"
-              >
-                Connexion
-              </Link>
-            )} */}
+            {/* Bouton de connexion optionnel */}
+            <Link
+              href="/login"
+              className="hidden sm:inline-flex items-center px-4 py-2.5 rounded-lg border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm"
+            >
+              Connexion
+            </Link>
           </div>
 
           {/* Mobile toggle */}
@@ -432,7 +421,7 @@ const NavbarA: React.FC = () => {
                 <div key={key} className="mb-3">
                   {!dropdown.items?.length ? (
                     <Link
-                      to={dropdown.link || "/"}
+                      href={dropdown.link || "/"}
                       className="flex items-center gap-3 py-3 px-4 text-gray-700 font-semibold rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 hover:text-blue-600 transition-all duration-200"
                       onClick={closeMobileMenu}
                     >
@@ -461,7 +450,7 @@ const NavbarA: React.FC = () => {
                           {dropdown.items.map((item, index) => (
                             <Link
                               key={index}
-                              to={item.link}
+                              href={item.link}
                               className="flex items-center gap-3 py-2.5 px-4 text-gray-700 rounded-lg hover:bg-white hover:text-blue-600 hover:shadow-md transition-all duration-200 font-medium text-sm sm:text-base"
                               onClick={closeMobileMenu}
                             >
@@ -477,32 +466,20 @@ const NavbarA: React.FC = () => {
 
               <div className="mt-6 flex flex-col gap-3">
                 <Link
-                  to="/comparateur-mutuelle-santé"
+                  href="/comparateur-mutuelle-santé"
                   onClick={closeMobileMenu}
                   className="w-full py-3 px-4 text-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold hover:from-blue-700 hover:to-indigo-700 shadow-lg transition-all duration-300 text-sm sm:text-base"
                 >
                   Devis gratuit
                 </Link>
 
-                {!isAuthenticated ? (
-                  <Link
-                    to="/login"
-                    onClick={closeMobileMenu}
-                    className="w-full py-3 px-4 text-center rounded-xl border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm sm:text-base"
-                  >
-                    Connexion
-                  </Link>
-                ) : (
-                  <button
-                    onClick={() => {
-                      handleLogout();
-                      closeMobileMenu();
-                    }}
-                    className="w-full py-3 px-4 text-center rounded-xl bg-red-600 text-white font-bold hover:bg-red-700 shadow-lg transition-all duration-300 text-sm sm:text-base"
-                  >
-                    Déconnexion
-                  </button>
-                )}
+                <Link
+                  href="/login"
+                  onClick={closeMobileMenu}
+                  className="w-full py-3 px-4 text-center rounded-xl border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm sm:text-base"
+                >
+                  Connexion
+                </Link>
               </div>
             </div>
           </motion.div>

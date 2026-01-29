@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Star, Quote, ChevronLeft, ChevronRight, Shield, Heart, CheckCircle } from 'lucide-react';
 
 const AvisDevis = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState<boolean>(true);
 
   // Données des témoignages
   const testimonials = [
@@ -82,12 +82,12 @@ const AvisDevis = () => {
     setIsAutoPlaying(false);
   };
 
-  const goToSlide = (index) => {
+  const goToSlide = (index: number) => {
     setCurrentIndex(index);
     setIsAutoPlaying(false);
   };
 
-  const renderStars = (rating) => {
+  const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
       <Star
         key={i}
@@ -105,8 +105,7 @@ const AvisDevis = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* En-tête */}
         <div className="text-center mb-12">
-           <span className="bg-yellow-300 text-gray-800 px-3 py-1  rounded-md text-sm font-medium">           
-            
+          <span className="bg-yellow-300 text-gray-800 px-3 py-1 rounded-md text-sm font-medium">           
             Témoignages vérifiés
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -128,12 +127,6 @@ const AvisDevis = () => {
             <Quote className="w-12 h-12 text-blue-500 mb-6 opacity-20 absolute top-8 left-8" />
             
             <div className="relative z-10">
-              {/* Badge de surbrillance 
-              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <Heart className="w-4 h-4" />
-                {currentTestimonial.highlight}
-              </div>*/}
-
               {/* Évaluation */}
               <div className="flex items-center gap-2 mb-6">
                 <div className="flex gap-1">
@@ -190,6 +183,7 @@ const AvisDevis = () => {
           <button
             onClick={prevTestimonial}
             className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-600 hover:text-blue-600 hover:shadow-xl transition-all duration-300 group"
+            aria-label="Témoignage précédent"
           >
             <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
           </button>
@@ -197,6 +191,7 @@ const AvisDevis = () => {
           <button
             onClick={nextTestimonial}
             className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-gray-600 hover:text-blue-600 hover:shadow-xl transition-all duration-300 group"
+            aria-label="Témoignage suivant"
           >
             <ChevronRight className="w-6 h-6 group-hover:scale-110 transition-transform" />
           </button>
@@ -213,6 +208,7 @@ const AvisDevis = () => {
                   ? 'bg-blue-600 w-8'
                   : 'bg-gray-300 hover:bg-gray-400'
               }`}
+              aria-label={`Aller au témoignage ${index + 1}`}
             />
           ))}
         </div>

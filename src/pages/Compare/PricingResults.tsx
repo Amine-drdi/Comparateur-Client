@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import LogoNeoliane from "../../../public/Image/Partenaire/Neo.webp"
 import LogoCegema from "../../../public/Image/Partenaire/LogoCegema-768x269-1.png"
 import LogoApril from "../../../public/Image/Partenaire/april.png"
+import Image from 'next/image';
 
 interface PricingResult {
   provider: 'Néoliane' | 'Cegema' | 'April';
@@ -370,19 +371,19 @@ const PricingResults: React.FC<PricingResultsProps> = ({ results }) => {
                     <div className="mb-3">
                       <div className="w-20 h-16 bg-white rounded-xl p-3 flex items-center justify-center shadow-md">
                         {isCegema ? (
-                          <img 
+                          <Image
                             src={LogoCegema} 
                             alt="Logo Cegema" 
                             className="w-full h-full object-contain"
                           />
                         ) : isApril ? (
-                          <img 
+                          <Image
                             src={LogoApril} 
                             alt="Logo April" 
                             className="w-full h-full object-contain"
                           />
                         ) : (
-                          <img 
+                          <Image
                             src={LogoNeoliane} 
                             alt="Logo Néoliane" 
                             className="w-full h-full object-contain"
@@ -516,7 +517,7 @@ const PricingResults: React.FC<PricingResultsProps> = ({ results }) => {
         <div className="flex flex-col md:flex-row justify-center items-center gap-6 mt-4">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-white border border-blue-300 p-1 flex items-center justify-center">
-              <img 
+              <Image
                 src={LogoNeoliane} 
                 alt="Logo Néoliane" 
                 className="w-full h-full object-contain"
@@ -529,7 +530,7 @@ const PricingResults: React.FC<PricingResultsProps> = ({ results }) => {
           </div>
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-white border border-emerald-300 p-1 flex items-center justify-center">
-              <img 
+              <Image
                 src={LogoCegema} 
                 alt="Logo Cegema" 
                 className="w-full h-full object-contain"
@@ -542,7 +543,7 @@ const PricingResults: React.FC<PricingResultsProps> = ({ results }) => {
           </div>
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-white border border-orange-300 p-1 flex items-center justify-center">
-              <img 
+              <Image 
                 src={LogoApril} 
                 alt="Logo April" 
                 className="w-full h-full object-contain"
