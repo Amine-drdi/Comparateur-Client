@@ -362,7 +362,7 @@ const NavbarA: React.FC = () => {
                         </div>
 
                         <Link
-                          href="/comparateur-mutuelle-santé"
+                          href="/comparateur-mutuelle-sante"
                           className="
                             mt-auto inline-flex items-center justify-center
                             rounded-xl bg-green-600 px-4 py-3
@@ -389,7 +389,7 @@ const NavbarA: React.FC = () => {
           <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
-                href="/comparateur-mutuelle-santé"
+                href="/comparateur-mutuelle-sante"
                 className="hidden sm:flex items-center justify-center w-28 sm:w-32 md:w-36 px-3 py-2.5 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 font-bold text-xs sm:text-sm"
               >
                 <span className="whitespace-nowrap">DEVIS GRATUIT</span>
@@ -473,7 +473,7 @@ const NavbarA: React.FC = () => {
 
               <div className="mt-6 flex flex-col gap-3">
                 <Link
-                  href="/comparateur-mutuelle-santé"
+                  href="/comparateur-mutuelle-sante"
                   onClick={closeMobileMenu}
                   className="w-full py-3 px-4 text-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold hover:from-blue-700 hover:to-indigo-700 shadow-lg transition-all duration-300 text-sm sm:text-base"
                 >

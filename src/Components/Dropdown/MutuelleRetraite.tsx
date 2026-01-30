@@ -73,7 +73,7 @@ function IconArrowRight(props: React.SVGProps<SVGSVGElement>) {
 /* ------------------------------ Images ------------------------------ */
 
 const images = {
-  hero: "/images/AvatarRetraite.png", // Image pour la section hero
+  hero: "/images/AvatarRetraite.png",
   retraiteFamily: "/images/medicaments.jpg",
   retraiteSenior: "/images/retraite-senior.jpg",
   retraiteSavings: "/images/revenue.jpg",
