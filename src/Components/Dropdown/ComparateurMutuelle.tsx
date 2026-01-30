@@ -431,7 +431,7 @@ export default function PageComparateurMutuelle() {
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               <div className="space-y-4 sm:space-y-6">
                 {/* H1 principal */}
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl leading-tight font-extrabold text-blue-700 mb-3 sm:mb-4 mt-24">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-4xl leading-tight font-extrabold text-blue-700 mb-3 sm:mb-4 mt-16">
                   Comparateur Mutuelle Santé : Votre Devis Gratuit en 2 min
                 </h1>
                 
@@ -497,7 +497,7 @@ export default function PageComparateurMutuelle() {
                 className="
                   relative bg-white/90 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-5 sm:p-6 lg:p-8
                   shadow-[0_10px_40px_-5px_rgba(0,0,0,0.15)] sm:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.25)]
-                  ring-1 ring-white/40 mt-8 sm:mt-16 lg:mt-0
+                  ring-1 ring-white/40 mt-8 sm:mt-16 lg:mt-16
                 "
               >
                 <div className="absolute inset-0 rounded-2xl sm:rounded-3xl bg-gradient-to-b from-white/50 to-transparent pointer-events-none" />
@@ -553,7 +553,7 @@ export default function PageComparateurMutuelle() {
                       </div>
                     </div>
 
-                    <PrimaryButton href="/comparateur-mutuelle-santé">Comparer maintenant</PrimaryButton>
+                    <PrimaryButton href="/comparateur-mutuelle-sante">Comparer maintenant</PrimaryButton>
 
                     <p className="text-xs text-slate-500 text-center px-2">
                       Service 100% gratuit • Sans engagement • Données sécurisées
@@ -842,7 +842,7 @@ function FinalCTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 sm:mb-12">
-            <PrimaryButton href="/comparateur-mutuelle-santé">Comparer maintenant</PrimaryButton>
+            <PrimaryButton href="/comparateur-mutuelle-sante">Comparer maintenant</PrimaryButton>
 
             <div className="flex items-center gap-3 text-blue-100">
               <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20 flex items-center justify-center ring-1 ring-white/10">

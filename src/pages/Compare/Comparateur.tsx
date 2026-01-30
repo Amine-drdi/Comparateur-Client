@@ -198,7 +198,7 @@ const ComparateurApril: React.FC = () => {
     try {
       setLoading(true);
       
-      const response = await axios.post('/api/april/comparateur-mutuelle-santé', {
+      const response = await axios.post('/api/april/comparateur-mutuelle-sante', {
         postalcode: formData.codePostal,
         birthdate_adult1: formData.dateNaissance,
         effectdate: formData.dateDebutAssurance,

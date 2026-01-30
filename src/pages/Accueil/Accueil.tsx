@@ -69,7 +69,7 @@ export default function Accueil() {
             {/* Conteneur avec les 4 cartes sur une ligne */}
             <div className="flex justify-between gap-2 px-2 pb-10">
               <Link
-                href="/comparateur-mutuelle-santé"
+                href="/comparateur-mutuelle-sante"
                 className="flex-1 border-2 border-blue-200 rounded-xl p-2 flex flex-col items-center hover:border-blue-300 hover:shadow-lg transition-all bg-white min-w-0"
               >
                 <Image src={img1} alt="Mutuelle Moi" className="w-8 mb-1" />
@@ -77,7 +77,7 @@ export default function Accueil() {
               </Link>
 
               <Link
-                href="/comparateur-mutuelle-santé"
+                href="/comparateur-mutuelle-sante"
                 className="flex-1 border-2 border-blue-200 rounded-xl p-2 flex flex-col items-center hover:border-blue-300 hover:shadow-lg transition-all bg-white min-w-0"
               >
                 <Image src={img2} alt="Mutuelle Couple" className="w-8 mb-1" />
@@ -85,7 +85,7 @@ export default function Accueil() {
               </Link>
 
               <Link
-                href="/comparateur-mutuelle-santé"
+                href="/comparateur-mutuelle-sante"
                 className="flex-1 border-2 border-blue-200 rounded-xl p-2 flex flex-col items-center hover:border-blue-300 hover:shadow-lg transition-all bg-white min-w-0"
               >
                 <Image src={img3} alt="Mutuelle Famille" className="w-8 mb-1" />
@@ -93,7 +93,7 @@ export default function Accueil() {
               </Link>
 
               <Link
-                href="/comparateur-mutuelle-santé"
+                href="/comparateur-mutuelle-sante"
                 className="flex-1 border-2 border-blue-200 rounded-xl p-2 flex flex-col items-center hover:border-blue-300 hover:shadow-lg transition-all bg-white min-w-0"
               >
                 <Image src={img4} alt="Mutuelle Famille complète" className="w-8 mb-1" />
@@ -110,7 +110,7 @@ export default function Accueil() {
           {/* TEXTE À GAUCHE */}
           <div className="w-full md:max-w-xl md:ml-4 lg:ml-8">
             {/* BADGE ALIGNÉ AVEC L'IMAGE */}
-            <div className="flex items-center mb-3">
+            <div className="flex items-center mb-1 mt-2.5">
               <p className="flex items-center text-base uppercase text-blue-600">
                 <FiSearch className="mr-3 h-5 w-5" />
                 Le comparateur d'assurances intelligent
@@ -135,7 +135,7 @@ export default function Accueil() {
 
             <div className="grid grid-cols-2 gap-2 pb-5">
               <Link
-                href="/comparateur-mutuelle-santé"
+                href="/comparateur-mutuelle-sante"
                 className="border-2 border-blue-200 rounded-2xl p-2 flex flex-col items-center hover:border-blue-300 hover:shadow-xl transition-all bg-white"
               >
                 <Image src={img1} alt="Mutuelle Moi" className="w-12 mb-2" />
@@ -143,7 +143,7 @@ export default function Accueil() {
               </Link>
 
               <Link
-                href="/comparateur-mutuelle-santé"
+                href="/comparateur-mutuelle-sante"
                 className="border-2 border-blue-200 rounded-2xl p-2 flex flex-col items-center hover:border-blue-300 hover:shadow-xl transition-all bg-white"
               >
                 <Image src={img2} alt="Mutuelle Couple" className="w-12 mb-2" />
@@ -151,7 +151,7 @@ export default function Accueil() {
               </Link>
 
               <Link
-                href="/comparateur-mutuelle-santé"
+                href="/comparateur-mutuelle-sante"
                 className="border-2 border-blue-200 rounded-2xl p-2 flex flex-col items-center hover:border-blue-300 hover:shadow-xl transition-all bg-white"
               >
                 <Image src={img3} alt="Mutuelle Famille" className="w-12 mb-2" />
@@ -159,7 +159,7 @@ export default function Accueil() {
               </Link>
 
               <Link
-                href="/comparateur-mutuelle-santé"
+                href="/comparateur-mutuelle-sante"
                 className="border-2 border-blue-200 rounded-2xl p-2 flex flex-col items-center hover:border-blue-300 hover:shadow-xl transition-all bg-white"
               >
                 <Image src={img4} alt="Mutuelle Famille complète" className="w-12 mb-2" />

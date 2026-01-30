@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="flex flex-col-reverse items-center justify-between lg:flex-row">
         {/* Texte de gauche */}
         <div className="lg:w-1/2">
-          <p className="flex items-center text-sm uppercase text-blue-600">
+          <p className="flex items-center text-sm uppercase text-blue-600 ">
             <FiSearch className="mr-2 h-5 w-5" /> Le comparateur d'assurances intelligent
           </p>
           <h2 className="mb-6 text-4xl font-extrabold text-blue-700 md:text-5xl lg:text-6xl">

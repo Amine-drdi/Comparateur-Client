@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     "mutuelle famille",
     "comparaison assurance santé",
     "changer de mutuelle santé",
+    "résilier mon contrat mutuelle santé"
   ],
 
   alternates: {
