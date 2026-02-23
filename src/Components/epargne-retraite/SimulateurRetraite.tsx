@@ -20,7 +20,7 @@ import NavbarA from "../Home/NavBar";
 import Footer from "../Home/Footer";
 
 const images = {
-  hero: "/images/simulateur-retraite.png", // à créer
+  hero: "/images/img-simulateur-retraite.png", // à créer
 };
 
 const jsonLd = {

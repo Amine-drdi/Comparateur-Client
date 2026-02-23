@@ -73,7 +73,7 @@ function IconArrowRight(props: React.SVGProps<SVGSVGElement>) {
 /* ------------------------------ Images ------------------------------ */
 
 const images = {
-  hero: "/images/mutuelle-tns.png", // prévoir ce visuel (cf meta doc)
+  hero: "/images/Images-Mutuelle/mutuelle-tns.png", // prévoir ce visuel (cf meta doc)
   artisan: "/images/tns-artisan.jpg",
   fiscalite: "/images/tns-fiscalite.jpeg",
   entrepreneurs: "/images/tns-entrepreneurs.jpg",
@@ -488,7 +488,7 @@ export default function MutuelleTnsIndependants() {
                    
                     priority
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent rounded-2xl sm:rounded-3xl" />
+                  <div className="absolute inset-0 sm:rounded-3xl" />
                 </div>
               </div>
             </div>

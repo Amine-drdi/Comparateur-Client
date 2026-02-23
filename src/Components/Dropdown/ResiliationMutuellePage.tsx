@@ -73,7 +73,7 @@ function IconArrowRight(props: React.SVGProps<SVGSVGElement>) {
 /* ------------------------------ Images ------------------------------ */
 
 const images = {
-  hero: "/images/resiliation-mutuelle.png",
+  hero: "/images/resiliation-mutuelle-sante.jpg",
   lettre: "/images/lettre-resiliation.jpg",
   calendrier: "/images/calendrier-resiliation.jpg",
   conseiller: "/images/conseiller-resiliation.jpg",
@@ -420,7 +420,7 @@ export default function ResiliationMutuellePage() {
               
               {/* Image Hero */}
               <div className="relative mt-8 sm:mt-16 lg:mt-0">
-                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.25)] ring-1 ring-white/40">
+                <div className="relative ">
                   <Image
                     src={images.hero}
                     alt="Résiliation mutuelle santé - Changer d'assurance facilement"
@@ -428,7 +428,7 @@ export default function ResiliationMutuellePage() {
                     height={400}
                     className="w-96 h-auto rounded-2xl sm:rounded-3xl"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent rounded-2xl sm:rounded-3xl" />
+                  <div className="absolute inset-0 " />
                 </div>
               </div>
             </div>

@@ -19,7 +19,7 @@ import {
 import NavbarA from "../Home/NavBar";
 import Footer from "../Home/Footer";
 
-const images = { hero: "/images/preparer-retraite.png" }; // à créer
+const images = { hero: "/images/img-preparer-retraite.png" }; // à créer
 
 const jsonLd = {
   "@context": "https://schema.org",

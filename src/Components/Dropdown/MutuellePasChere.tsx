@@ -420,7 +420,7 @@ export default function MutuellePasCherePage() {
               
               {/* Image Hero */}
               <div className="relative mt-8 sm:mt-16 lg:mt-0">
-                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.25)] ring-1 ring-white/40 mt-6 ml-6 ">
+                <div className="relative  mt-6 ml-6 ">
                   <Image
                     src={images.hero}
                     alt="Mutuelle pas chère - Complémentaire santé économique"
@@ -428,7 +428,7 @@ export default function MutuellePasCherePage() {
                     height={400}
                     className=" rounded-2xl sm:rounded-3xl"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent rounded-2xl sm:rounded-3xl" />
+                  <div className="absolute inset-0 " />
                 </div>
               </div>
             </div>

@@ -467,7 +467,7 @@ export default function MutuelleFamillePage() {
               
               {/* Image Hero */}
               <div className="relative mt-8 sm:mt-16 lg:mt-0">
-                <div className="relative  overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.25)] mt-12">
+                <div className="relative mt-12">
                   <Image
                     src={images.hero}
                     alt="Mutuelle famille - Protégez parents et enfants à petit prix"
@@ -475,7 +475,7 @@ export default function MutuelleFamillePage() {
                     height={500}
                     
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent rounded-2xl sm:rounded-3xl" />
+                  <div className="absolute inset-0 " />
                 </div>
               </div>
             </div>

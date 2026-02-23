@@ -436,7 +436,7 @@ export default function MutuelleOptiquePage() {
                     height={400}
                     className="ml-6"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent rounded-2xl sm:rounded-3xl" />
+                  <div className="absolute inset-0 " />
               
                 </div>
               </div>

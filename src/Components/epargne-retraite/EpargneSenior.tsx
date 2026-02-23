@@ -19,7 +19,7 @@ import {
 import NavbarA from "../Home/NavBar";
 import Footer from "../Home/Footer";
 
-const images = { hero: "/images/og-epargne-senior.jpg" }; // à créer
+const images = { hero: "/images/img-epargne-senior.png" }; // à créer
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -96,7 +96,7 @@ export default function EpargneSenior() {
               </div>
 
               <div className="relative">
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/40 bg-white/20">
+                <div className="relative ">
                   <Image src={images.hero} alt="Épargne senior" width={1200} height={630} className="w-full h-auto" priority />
                 </div>
               </div>

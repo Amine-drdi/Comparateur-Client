@@ -73,7 +73,7 @@ function IconArrowRight(props: React.SVGProps<SVGSVGElement>) {
 /* ------------------------------ Images ------------------------------ */
 
 const images = {
-  hero: "/images/RetraiteAvatar.webp",
+  hero: "/images/Images-Mutuelle/img-Retraite.png",
   retraiteFamily: "/images/medicaments.jpg",
   retraiteSenior: "/images/retraite-senior.jpg",
   retraiteSavings: "/images/revenue.jpg",
@@ -421,7 +421,7 @@ export default function MutuelleRetraitePage() {
               
               {/* Image Hero (remplace le formulaire) */}
               <div className="relative mt-8 sm:mt-16 lg:mt-0">
-                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-[0_20px_60px_-15px_rgba(0,0,0,0.25)] ring-1 ring-white/40 ">
+                <div className="relative  ">
                   <Image
                     src={images.hero}
                     alt="Mutuelle retraité - Protection santé pour les retraités"
@@ -429,7 +429,7 @@ export default function MutuelleRetraitePage() {
                     height={400}
                     className="rounded-2xl sm:rounded-3xl"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent rounded-2xl sm:rounded-3xl" />
+                  <div className="absolute inset-0  rounded-2xl sm:rounded-3xl" />
 
                 </div>
               </div>
