@@ -10,6 +10,8 @@
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
     "@reduxjs/toolkit": "^2.11.2",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.118.0",
     "axios": "^1.13.4",
     "formik": "^2.4.9",
     "framer-motion": "^12.26.1",
@@ -19,6 +21,8 @@
     "react-dom": "19.2.3",
     "react-icons": "^5.5.0",
     "react-redux": "^9.2.0",
+    "recharts": "^3.10.1",
+    "resend": "^6.33.0",
     "yup": "^1.7.1"
   },
   "devDependencies": {
@@ -26,7 +30,9 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^18.0.8",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }
