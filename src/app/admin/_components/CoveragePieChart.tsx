@@ -32,8 +32,8 @@ export default function CoveragePieChart({ data }: Props) {
             boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
             fontSize: 13,
           }}
-          formatter={(value: number) => [
-            `${value} (${Math.round((value / total) * 100)}%)`,
+          formatter={(value: any) => [
+            `${value} (${Math.round((Number(value) / total) * 100)}%)`,
             '',
           ]}
         />

@@ -90,11 +90,9 @@ export async function POST(request: NextRequest) {
         from: FROM_EMAIL,
         to: body.email,
         subject: '✅ Votre simulation de mutuelle est prête',
-        html: confirmationEmailHtml({
-          firstName: body.firstName,
-          coverageLevel: body.coverageLevel,
-          offersCount: body.offersCount ?? 0,
-        }),
+       html: confirmationEmailHtml({
+  firstName: body.firstName,
+}),
       });
 
       if (emailResult.error) {

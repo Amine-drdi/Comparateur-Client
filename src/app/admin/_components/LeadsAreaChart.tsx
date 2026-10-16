@@ -27,7 +27,7 @@ export default function LeadsAreaChart({ data }: Props) {
             fontSize: 13,
           }}
           labelStyle={{ color: '#111827', fontWeight: 600 }}
-          formatter={(value: number) => [`${value} lead${value > 1 ? 's' : ''}`, '']}
+          formatter={(value: any) => [`${value} lead${Number(value) > 1 ? 's' : ''}`, '']}
         />
         <Area type="monotone" dataKey="count" stroke="#3b82f6" strokeWidth={2} fill="url(#colorLeads)" />
       </AreaChart>
