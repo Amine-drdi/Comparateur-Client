@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.lamutuelledefrance.fr"),
   title: {
     default: "Comparateur Mutuelle Santé – Devis Gratuit | La Mutuelle de France",
     template: "%s | La Mutuelle de France",
@@ -23,10 +24,6 @@ export const metadata: Metadata = {
     "résilier mon contrat mutuelle santé"
   ],
 
-  alternates: {
-    canonical: "https://www.lamutuelledefrance.fr/",
-  },
-
   robots: {
     index: true,
     follow: true,
@@ -43,15 +40,12 @@ export const metadata: Metadata = {
     title: "Comparateur Mutuelle Santé – Économisez Jusqu’à 40 %",
     description:
       "Comparez +30 offres de mutuelles santé partenaires et trouvez la couverture idéale selon votre budget. Service 100 % gratuit.",
-    url: "https://www.lamutuelledefrance.fr/",
     siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
     images: [
       {
-        url: "https://www.lamutuelledefrance.fr/images/og-mutuelle.jpg",
-        width: 1200,
-        height: 630,
+        url: "/images/comparateur-mutuelle.jpg",
         alt: "Comparateur Mutuelle Santé – La Mutuelle de France",
       },
     ],
@@ -62,19 +56,11 @@ export const metadata: Metadata = {
     title: "Comparateur Mutuelle Santé – Devis Gratuit",
     description:
       "Trouvez la meilleure mutuelle santé adaptée à vos besoins. Devis immédiat, gratuit et sans engagement.",
-    images: ["https://www.lamutuelledefrance.fr/images/og-mutuelle.jpg"],
+    images: ["/images/comparateur-mutuelle.jpg"],
   },
 
   icons: {
-    icon: "/logo.png",
-    apple: "/apple-touch-icon.png",
-  },
-
-  other: {
-    "geo.region": "FR",
-    "geo.placename": "France",
-    audience: "seniors, retraités, familles, actifs",
-    telephone: "01 88 81 21 08",
+    icon: "/logo.ico",
   },
 };
 
@@ -82,6 +68,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr">
       <body>{children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "La Mutuelle de France",
+              url: "https://www.lamutuelledefrance.fr",
+              inLanguage: "fr-FR",
+            }),
+          }}
+        />
         {/* Boutons flottants */}
         <FloatingButtons />
       </body>

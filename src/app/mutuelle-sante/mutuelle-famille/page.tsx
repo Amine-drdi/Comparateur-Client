@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: "Mutuelle Famille : Protégez Parents et Enfants à Petit Prix",
     description: "Orthodontie, Lunettes, Pédiatre... Vos enfants coûtent cher ? Trouvez une mutuelle qui couvre vraiment leurs besoins tout en préservant votre budget.",
     url: "https://www.lamutuelledefrance.fr/mutuelle-sante/mutuelle-famille",
-    siteName: "Devis Mutuelle",
+    siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
   },

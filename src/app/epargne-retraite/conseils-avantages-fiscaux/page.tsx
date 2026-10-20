@@ -2,7 +2,7 @@ import ConseilsAvantagesFiscaux from "@/Components/epargne-retraite/ComparateurR
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Conseils & Avantages Fiscaux : Réduire ses Impôts avec le PER | Devis Mutuelle",
+  title: "Conseils Fiscaux : PER et Avantages de l’Épargne Retraite",
   description:
     "Comment payer moins d'impôts ? Découvrez nos conseils en défiscalisation : PER, Assurance Vie, Loi Madelin. Audit fiscal et patrimonial gratuit par nos experts.",
   keywords: [
@@ -20,14 +20,12 @@ export const metadata: Metadata = {
     description:
       "Ne donnez pas tout au fisc. Utilisez les dispositifs légaux (PER, Assurance Vie) pour préparer votre avenir. Simulation d'économie d'impôt gratuite.",
     url: "https://www.lamutuelledefrance.fr/epargne-retraite/conseils-avantages-fiscaux",
-    siteName: "Devis Mutuelle",
+    siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
     images: [
       {
-        url: "https://www.lamutuelledefrance.fr/images/og-conseils-fiscaux.jpg",
-        width: 1200,
-        height: 630,
+        url: "https://www.lamutuelledefrance.fr/images/conseils-fiscaux.jpg",
         alt: "Conseils et Avantages Fiscaux Devis Mutuelle",
       },
     ],

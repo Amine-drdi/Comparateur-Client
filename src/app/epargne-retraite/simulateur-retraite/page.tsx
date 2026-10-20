@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Simulateur Retraite Gratuit : Calcul Pension & Épargne | Devis Mutuelle",
+  title: "Simulateur Retraite : Estimez votre Pension et votre Épargne",
   description:
     "Calculez le montant de votre future retraite en 2 min. Estimez votre perte de revenus et découvrez combien épargner (PER) pour maintenir votre niveau de vie. Bilan gratuit.",
   keywords: [
@@ -21,14 +21,12 @@ export const metadata: Metadata = {
     description:
       "Ne restez pas dans le flou. Estimez votre pension et vos besoins d'épargne. Nos experts vous aident à combler l'écart de revenus.",
     url: "https://www.lamutuelledefrance.fr/epargne-retraite/simulateur-retraite",
-    siteName: "Devis Mutuelle",
+    siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
     images: [
       {
-        url: "https://www.lamutuelledefrance.fr/images/og-simulateur-retraite.jpg",
-        width: 1200,
-        height: 630,
+        url: "https://www.lamutuelledefrance.fr/images/revenue.jpg",
         alt: "Simulateur Calcul Retraite Devis Mutuelle",
       },
     ],

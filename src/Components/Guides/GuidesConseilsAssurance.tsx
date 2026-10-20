@@ -70,16 +70,9 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://lamutuelledefrance.fr/#organization",
-      name: "Devis Mutuelle",
-      url: "https://lamutuelledefrance.fr",
-      contactPoint: {
-        "@type": "ContactPoint",
-        telephone: "+33-1-88-81-21-08",
-        contactType: "sales",
-        areaServed: "FR",
-        availableLanguage: ["fr"],
-      },
+      "@id": "https://www.lamutuelledefrance.fr/#organization",
+      name: "La Mutuelle de France",
+      url: "https://www.lamutuelledefrance.fr",
     },
     {
       "@type": "ItemList",
@@ -87,7 +80,7 @@ const jsonLd = {
       itemListElement: BLOGS.map((b, idx) => ({
         "@type": "ListItem",
         position: idx + 1,
-        url: `https://lamutuelledefrance.fr${b.href}`,
+        url: `https://www.lamutuelledefrance.fr${b.href}`,
         name: b.title,
       })),
     },
@@ -123,7 +116,7 @@ export default function GuidesConseilsAssurance() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
-                  <SecondaryButton href="tel:0188812108">Parler à un expert : 01 88 81 21 08</SecondaryButton>
+                  <SecondaryButton href="tel:0188812108">Parler à un expert : 06 09 99 98 02</SecondaryButton>
                 </div>
 
                 <div className="mt-6">

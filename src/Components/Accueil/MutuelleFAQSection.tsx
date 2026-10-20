@@ -91,7 +91,7 @@ const MutuelleFAQSection = () => {
             <p className="text-gray-50">
             Vous n’avez pas trouvé la réponse que vous cherchez ?{' '}
               <a
-                href="/contactez-nous"
+                href="/Contact"
                 title="Contact support"
                 className="text-yellow-300 transition-all duration-200 hover:text-yellow-400 focus:text-yellow-400 hover:underline"
               >

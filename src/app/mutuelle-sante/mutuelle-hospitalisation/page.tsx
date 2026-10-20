@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Mutuelle Hospitalisation : Couvrez l'Essentiel à Petit Prix",
     description: "Pourquoi payer pour l'inutile ? Optez pour une couverture ciblée sur l'hospitalisation (Frais de séjour, Chirurgie, Chambre privée). Idéal pour réduire votre budget.",
     url: "https://www.lamutuelledefrance.fr/mutuelle-sante/mutuelle-hospitalisation",
-    siteName: "Devis Mutuelle",
+    siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
   },

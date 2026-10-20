@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Changer de Mutuelle : Démarches Gratuites et Simplifiées",
     description: "Ne restez pas bloqué avec une mutuelle trop chère. Découvrez comment résilier sans frais après 1 an et trouvez une meilleure couverture immédiatement.",
     url: "https://www.lamutuelledefrance.fr/mutuelle-sante/changer-mutuelle",
-    siteName: "Devis Mutuelle",
+    siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
   },

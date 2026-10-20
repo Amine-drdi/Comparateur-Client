@@ -71,19 +71,12 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://lamutuelledefrance.fr/#organization",
-      name: "Devis Mutuelle",
-      url: "https://lamutuelledefrance.fr",
+      "@id": "https://www.lamutuelledefrance.fr/#organization",
+      name: "La Mutuelle de France",
+      url: "https://www.lamutuelledefrance.fr",
       logo: {
         "@type": "ImageObject",
-        url: "https://lamutuelledefrance.fr/logo.png",
-      },
-      contactPoint: {
-        "@type": "ContactPoint",
-        telephone: "+33-1-88-81-21-08",
-        contactType: "sales",
-        areaServed: "FR",
-        availableLanguage: ["fr"],
+        url: "https://www.lamutuelledefrance.fr/logo.png",
       },
     },
     {
@@ -92,7 +85,7 @@ const jsonLd = {
       itemListElement: GUIDES.map((g, idx) => ({
         "@type": "ListItem",
         position: idx + 1,
-        url: `https://lamutuelledefrance.fr${g.href}`,
+        url: `https://www.lamutuelledefrance.fr${g.href}`,
         name: g.title,
       })),
     },
@@ -129,7 +122,7 @@ export default function GuidesConseilsGuidePratique() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
-                  <SecondaryButton href="tel:0188812108">Parler à un expert : 01 88 81 21 08</SecondaryButton>
+                  <SecondaryButton href="tel:0188812108">Parler à un expert : 06 09 99 98 02</SecondaryButton>
                   <PrimaryButton onClick={() => setOpen(true)}>Être rappelé</PrimaryButton>
                 </div>
 

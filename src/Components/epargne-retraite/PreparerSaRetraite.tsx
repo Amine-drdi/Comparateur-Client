@@ -30,8 +30,7 @@ const jsonLd = {
       description: "Service de bilan patrimonial et de conseil en stratégie retraite (PER, Assurance Vie, Optimisation fiscale).",
       provider: {
         "@type": "Organization",
-        name: "Devis Mutuelle",
-        telephone: "+33-1-88-81-21-08",
+        name: "La Mutuelle de France",
         url: "https://www.lamutuelledefrance.fr",
         logo: "https://www.lamutuelledefrance.fr/logo.png",
       },
@@ -86,7 +85,7 @@ export default function PreparerSaRetraite() {
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
                   <PrimaryButton onClick={() => setOpen(true)}>Lancer mon Bilan Retraite</PrimaryButton>
-                  <SecondaryButton href="tel:0188812108">Expert : 01 88 81 21 08</SecondaryButton>
+                  <SecondaryButton href="tel:0188812108">Expert : 06 09 99 98 02</SecondaryButton>
                 </div>
 
                 <div className="mt-6">
@@ -142,7 +141,7 @@ export default function PreparerSaRetraite() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
               <PrimaryButton onClick={() => setOpen(true)}>Obtenir une stratégie adaptée à mon âge</PrimaryButton>
-              <SecondaryButton href="tel:0188812108">Être rappelé : 01 88 81 21 08</SecondaryButton>
+              <SecondaryButton href="tel:0188812108">Être rappelé : 06 09 99 98 02</SecondaryButton>
             </div>
           </section>
 

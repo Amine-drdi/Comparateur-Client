@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Mutuelle TNS & Indépendants 2026 : Comparatif Loi Madelin",
+  title: "Mutuelle TNS et Indépendants : Comparatif Loi Madelin",
   description:
-    "Comparateur de Mutuelle TNS pour artisans et libéraux. Profitez de la Loi Madelin pour déduire vos cotisations de vos impôts. Devis gratuit sur DevisMutuelle.fr.",
+    "Comparez les complémentaires santé pour travailleurs indépendants et découvrez les informations sur la loi Madelin.",
   keywords: [
     "Mutuelle TNS",
     "Assurance santé indépendant",
@@ -18,21 +18,19 @@ export const metadata: Metadata = {
     title: "Mutuelle TNS : Moins d'impôts, meilleure santé !",
     description:
       "Artisans, Libéraux : Découvrez comment la Loi Madelin finance votre couverture santé. Comparez les offres 2026.",
-    url: "https://devismutuelle.fr/mutuelle/tns-independants-loi-madelin",
-    siteName: "Devis Mutuelle",
+    url: "https://www.lamutuelledefrance.fr/mutuelle-sante/tns-independants-loi-madelin",
+    siteName: "La Mutuelle de France",
     images: [
       {
-        url: "https://devismutuelle.fr/images/mutuelle-tns-madelin.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Artisan indépendant souriant sur son lieu de travail",
+        url: "https://www.lamutuelledefrance.fr/images/tns-assistance-pro.jpeg",
+        alt: "Accompagnement des travailleurs indépendants",
       },
     ],
     locale: "fr_FR",
     type: "website",
   },
   alternates: {
-    canonical: "https://devismutuelle.fr/mutuelle/tns-independants-loi-madelin",
+    canonical: "https://www.lamutuelledefrance.fr/mutuelle-sante/tns-independants-loi-madelin",
   },
 };
 

@@ -36,27 +36,30 @@ interface SocialItem {
 
 const LiensRapide: LinkItem[] = [
   { title: "Accueil", link: "/home" },
-  { title: "Qui sommes-nous", link: "" },
-  { title: "Assurances", link: "s" },
-  { title: "Contact", link: "/contactez-nous" },
+ // { title: "Qui sommes-nous", link: "" },
+ // { title: "Assurances", link: "s" },
+  { title: "Contact", link: "/Contact" },
   { title: "Mentions légales", link: "" },
 ];
 
 const LiensBesoin: LinkBesoin[] = [
-  { title: "Mutuelle santé", link: "/InsuranceComparison" },
-  { title: "Besoin dentaire", link: "/dentaire" },
-  { title: "Besoin optique", link: "/optique" },
-  { title: "Besoin orthodontie", link: "/orthodontie" },
-  { title: "Assurance santé expatriés", link: "/expatries" },
+  { title: "Mutuelle santé", link: "/guides-conseils/mutuelle" },
+  { title: "Besoin dentaire", link: "/mutuelle-sante/mutuelle-dentaire" },
+  { title: "Besoin optique", link: "/mutuelle-sante/mutuelle-optique" },
+ // { title: "Besoin orthodontie", link: "/orthodontie" },
+  //{ title: "Assurance santé expatriés", link: "/expatries" },
+  { title: "Hospitalisation", link: "/mutuelle-sante/mutuelle-hospitalisation" },
+  { title: "Changer de mutuelle", link: "/mutuelle-sante/changer-mutuelle" },
+  { title: "Mutuelle pas chère", link: "/mutuelle-sante/mutuelle-pas-chere" },
 ];
 
 const LiensProfil: LinkProfil[] = [
-  { title: "Senior", link: "/profil/senior" },
-  { title: "Indépandant et TNS", link: "/profil/tns" },
-  { title: "Fonctionnaire", link: "/profil/fonctionnaire" },
-  { title: "Famille", link: "/profil/famille" },
-  { title: "Sans emploi", link: "/profil/sans-emploi" },
-  { title: "Etudiant", link: "/profil/etudiant" },
+  { title: "Senior", link: "/mutuelle-sante/mutuelle-senior" },
+  { title: "Indépandant et TNS", link: "/mutuelle-sante/tns-independants-loi-madelin" },
+ // { title: "Fonctionnaire", link: "/profil/fonctionnaire" },
+  { title: "Famille", link: "/mutuelle-sante/mutuelle-famille" },
+  { title: "Retraité", link: "/mutuelle-sante/mutuelle-retraite" },
+  //{ title: "Etudiant", link: "/profil/etudiant" },
 ];
 
 export default function Footer() {
@@ -200,10 +203,10 @@ export default function Footer() {
               <div>
                 <p className="font-medium text-sm md:text-base">Téléphone</p>
                 <a
-                  href="tel:+33756663333"
+                  href="tel:+33609999802"
                   className="text-slate-300 hover:text-blue-400 transition-colors text-xs md:text-sm"
                 >
-                  +33 75 666 33 33
+                  +33 6 09 99 98 02
                 </a>
               </div>
             </div>
@@ -216,10 +219,10 @@ export default function Footer() {
               <div>
                 <p className="font-medium text-sm md:text-base">Email</p>
                 <a
-                  href="mailto:contact@lamutuelledefrance.fr"
+                  href="mailto:contact@fidesconseil-patrimoine.fr"
                   className="text-slate-300 hover:text-orange-400 transition-colors text-xs md:text-sm break-all"
                 >
-                  contact@lamutuelledefrance.fr
+                  contact@fidesconseil-patrimoine.fr
                 </a>
               </div>
             </div>
@@ -271,13 +274,13 @@ export default function Footer() {
                 [
                   {
                     icon: FaInstagram,
-                    href: "#",
+                    href: "https://www.instagram.com/mutuelledefrance?fbclid=IwY2xjawVC0L9leHRuA2FlbQIxMABwZG9mAXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR4A2rOAXS7Nb3itMlUZ3fwg-KV6hd0NhUAeU96q2N53K5bOCl_ghW2HzxbYKw_aem_QUgx-4DmnpQG_5p-U1C78Q",
                     color: "from-pink-500 to-purple-500",
                     hoverColor: "hover:text-pink-400",
                   },
                   {
                     icon: FaFacebook,
-                    href: "#",
+                    href: "https://www.facebook.com/LaMutuelledeFrance",
                     color: "from-blue-500 to-blue-600",
                     hoverColor: "hover:text-blue-400",
                   },

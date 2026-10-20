@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Mutuelle Retraité : Protégez votre Santé et votre Budget",
     description: "Vos besoins changent à la retraite. Trouvez une couverture renforcée (Auditif, Hospitalisation) à un prix juste. Comparez les offres dédiées aux retraités.",
     url: "https://www.lamutuelledefrance.fr/mutuelle-sante/mutuelle-retraite",
-    siteName: "La Mutuelle De France",
+    siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
   },

@@ -2,7 +2,7 @@ import PreparerSaRetraite from "@/Components/epargne-retraite/PreparerSaRetraite
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Préparer sa Retraite : Guide Complet & Bilan Gratuit | Devis Mutuelle",
+  title: "Préparer sa Retraite : Guide et Solutions d’Épargne",
   description:
     "Comment anticiper la baisse de revenus ? Découvrez nos solutions pour préparer votre retraite : PER, Assurance Vie, Bilan Patrimonial. Audit gratuit par nos experts.",
   keywords: [
@@ -20,14 +20,12 @@ export const metadata: Metadata = {
     description:
       "Le système par répartition ne suffira pas. Construisez votre capital dès aujourd'hui avec nos solutions défiscalisantes. Simulation gratuite.",
     url: "https://www.lamutuelledefrance.fr/epargne-retraite/preparer-sa-retraite",
-    siteName: "Devis Mutuelle",
+    siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
     images: [
       {
-        url: "https://www.lamutuelledefrance.fr/images/og-preparer-retraite.jpg",
-        width: 1200,
-        height: 630,
+        url: "https://www.lamutuelledefrance.fr/images/PlanEpargneRetraite.jpg",
         alt: "Préparer sa Retraite Devis Mutuelle",
       },
     ],

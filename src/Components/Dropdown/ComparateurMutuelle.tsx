@@ -696,7 +696,7 @@ function HowItWorksSection() {
             <StepCard step={3} title="Choisissez en toute sérénité">
               <p>Notre conseiller vous accompagne dans votre choix et les démarches.</p>
               <p className="mt-3 sm:mt-4">
-                <PhoneLink phone="01 88 81 21 08" />
+                <PhoneLink phone="06 09 99 98 02" />
               </p>
             </StepCard>
           </div>

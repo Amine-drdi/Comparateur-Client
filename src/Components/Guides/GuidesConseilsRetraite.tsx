@@ -41,7 +41,7 @@ const images = {
 const GUIDES: GuideCard[] = [
   {
     title: "Tout savoir sur le PER, l'Assurance Vie et la Défiscalisation : Le Guide Complet 2026",
-    href: "/guides-conseils/epargne-retraite/tout-sur-le-per-assurance-vie-defiscalisation",
+    href: "/epargne-retraite/preparer-sa-retraite",
     category: "Épargne & Retraite",
     readingTime: "8–12 min",
     excerpt:
@@ -60,9 +60,8 @@ const SEO = {
   title: "Tout sur le PER, l'Assurance Vie & la Défiscalisation | Guide 2026",
   description:
     "Le guide ultime pour préparer votre retraite et réduire vos impôts. Comparatif PER vs Assurance Vie, plafonds de déduction et conseils d'experts Devis Mutuelle.",
-  canonical:
-    "https://devismutuelle.fr/guides-conseils/epargne-retraite/tout-sur-le-per-assurance-vie-defiscalisation",
-  ogImage: "https://devismutuelle.fr/images/blog/guide-epargne-retraite-og.jpg",
+  canonical: "https://www.lamutuelledefrance.fr/guides-conseils/retraite",
+  ogImage: "https://www.lamutuelledefrance.fr/images/PlanEpargneRetraite.jpg",
 };
 
 const jsonLd = {
@@ -70,19 +69,12 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://devismutuelle.fr/#organization",
-      name: "Devis Mutuelle",
-      url: "https://devismutuelle.fr",
+      "@id": "https://www.lamutuelledefrance.fr/#organization",
+      name: "La Mutuelle de France",
+      url: "https://www.lamutuelledefrance.fr",
       logo: {
         "@type": "ImageObject",
-        url: "https://devismutuelle.fr/logo.png",
-      },
-      contactPoint: {
-        "@type": "ContactPoint",
-        telephone: "+33-1-88-81-21-08",
-        contactType: "sales",
-        areaServed: "FR",
-        availableLanguage: ["fr"],
+        url: "https://www.lamutuelledefrance.fr/logo.png",
       },
     },
     {
@@ -90,11 +82,8 @@ const jsonLd = {
       headline: "Tout savoir sur le PER, l'Assurance Vie et la Défiscalisation : Le Guide Complet 2026",
       description:
         "Dossier complet sur l'épargne retraite. Apprenez à choisir entre PER et Assurance Vie pour optimiser votre fiscalité.",
-      image: "https://devismutuelle.fr/images/blog/guide-epargne-retraite.jpg",
-      datePublished: "2025-12-26T09:00:00+01:00",
-      dateModified: "2025-12-26T10:00:00+01:00",
-      author: { "@type": "Organization", name: "Devis Mutuelle", url: "https://devismutuelle.fr" },
-      publisher: { "@id": "https://devismutuelle.fr/#organization" },
+      image: SEO.ogImage,
+      publisher: { "@id": "https://www.lamutuelledefrance.fr/#organization" },
       mainEntityOfPage: { "@type": "WebPage", "@id": SEO.canonical },
     },
     {
@@ -163,16 +152,16 @@ export default function GuidesConseilsRetraite() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
-                  <SecondaryButton href="tel:0188812108">Parler à un conseiller : 01 88 81 21 08</SecondaryButton>
+                  <SecondaryButton href="tel:0188812108">Parler à un conseiller : 06 09 99 98 02</SecondaryButton>
                   <PrimaryButton onClick={() => setOpen(true)}>Demander un audit patrimonial</PrimaryButton>
                 </div>
 
                 <div className="mt-6">
                   <InlineLinks
                     items={[
-                      { href: "/contact", label: "Audit patrimonial gratuit" },
-                      { href: "/comparateur-epargne", label: "Comparer nos offres d’épargne" },
-                      { href: "/guides-conseils/epargne-retraite", label: "Tous les guides Épargne" },
+                      { href: "/Contact", label: "Audit patrimonial gratuit" },
+                      { href: "/epargne-retraite/comparateur-retraite", label: "Comparer nos offres d’épargne" },
+                      { href: "/epargne-retraite/preparer-sa-retraite", label: "Préparer sa retraite" },
                     ]}
                   />
                 </div>
@@ -277,7 +266,7 @@ export default function GuidesConseilsRetraite() {
                   Assurance Vie (souplesse + transmission).
                 </p>
                 <div className="mt-4 flex flex-col sm:flex-row gap-3">
-                  <SecondaryButton href="/contact">Demander un audit patrimonial gratuit</SecondaryButton>
+                  <SecondaryButton href="/Contact">Demander un audit patrimonial gratuit</SecondaryButton>
                   <PrimaryButton onClick={() => setOpen(true)}>Parler à un expert</PrimaryButton>
                 </div>
               </div>

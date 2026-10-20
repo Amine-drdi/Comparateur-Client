@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: "Mutuelle Dentaire : Ne renoncez plus à vos soins coûteux",
     description: "Implants, Couronnes, Orthodontie... La Sécu rembourse mal. Trouvez la mutuelle qui prend en charge vos frais réels. Comparez les meilleures offres.",
     url: "https://www.lamutuelledefrance.fr/mutuelle-sante/mutuelle-dentaire",
-    siteName: "Devis Mutuelle",
+    siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
   },

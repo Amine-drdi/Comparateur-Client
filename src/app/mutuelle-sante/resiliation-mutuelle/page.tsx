@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Résilier sa Mutuelle : C'est enfin simple et gratuit !",
     description: "Trop cher ? Mal remboursé ? Changez de mutuelle à tout moment après 1 an. On vous explique comment faire étape par étape. Zéro frais.",
     url: "https://www.lamutuelledefrance.fr/mutuelle-sante/resiliation-mutuelle",
-    siteName: "Devis Mutuelle",
+    siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
   },
@@ -46,50 +46,6 @@ export const metadata: Metadata = {
   },
 };
 
-// Données structurées JSON-LD (FAQ Schema)
-export const resiliationSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Puis-je résilier ma mutuelle à tout moment ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui, après un an de contrat, grâce au dispositif de résiliation infra-annuelle. Vous pouvez changer de mutuelle librement, sans frais ni pénalité."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Dois-je envoyer un courrier recommandé ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Non, ce n'est plus obligatoire. La résiliation peut se faire par lettre simple, email ou via l'espace client. Votre nouvel assureur peut aussi s'en charger pour vous."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "La résiliation est-elle gratuite ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui, totalement. Aucun frais ni pénalité ne peut être exigé si votre contrat a plus de 12 mois d'ancienneté."
-      }
-    }
-  ]
-};
-
-// Intégration du Schema JSON-LD dans la page
 export default function ResiliationPage() {
-  return (
-    <>
-      {/* Script pour les données structurées JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(resiliationSchema) }}
-      />
-      
-      {/* Composant principal */}
-      <ResiliationMutuellePage />
-    </>
-  );
+  return <ResiliationMutuellePage />;
 }

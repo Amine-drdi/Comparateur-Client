@@ -197,7 +197,7 @@ const NavbarA: React.FC = () => {
 
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 lg:gap-6 text-xs sm:text-sm">
               <a
-                href="tel:+33188812109"
+                href="tel:+33609999802"
                 className="flex items-center gap-2 text-white/90 hover:text-white transition-all"
               >
                 <div className="w-9 h-9 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
@@ -206,13 +206,13 @@ const NavbarA: React.FC = () => {
                 <div className="flex flex-col">
                   <span className="font-medium">Numéro vert</span>
                   <span className="font-bold text-sm sm:text-base text-white tracking-wide">
-                    +33 1 88 81 21 09
+                    +33 6 09 99 98 02
                   </span>
                 </div>
               </a>
 
               <a
-                href="mailto:contact@lamutuelledefrance.fr"
+                href="mailto:contact@fidesconseil-patrimoine.fr"
                 className="hidden sm:flex items-center gap-2 text-white/90 hover:text-white transition-all"
               >
                 <div className="w-7 h-7 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
@@ -221,13 +221,13 @@ const NavbarA: React.FC = () => {
                 <div className="hidden md:flex flex-col">
                   <span className="font-medium">Écrivez-nous</span>
                   <span className="font-bold text-sm text-white tracking-tight">
-                    contact@lamutuelledefrance.fr
+                    contact@fidesconseil-patrimoine.fr
                   </span>
                 </div>
               </a>
 
               <a
-                href="tel:+33188812109"
+                href="tel:+33609999802"
                 className="sm:hidden ml-2 px-3 py-1.5 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white text-xs font-bold rounded-full shadow-lg"
               >
                 Appeler
@@ -249,7 +249,7 @@ const NavbarA: React.FC = () => {
             <motion.div className="relative" whileHover={{ rotate: 5 }}>
               <Image
                 src={logoSrc}
-                alt="logo"
+                alt="Logo de La Mutuelle de France"
                 className="w-72 filter drop-shadow-lg group-hover:drop-shadow-2xl transition-all duration-300"
                 priority
               />

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Mutuelle Optique : Réduisez votre Reste à Charge",
     description: "Besoin de nouvelles lunettes ou de lentilles ? Trouvez la mutuelle qui rembourse le mieux vos équipements optiques et l'opération laser. Comparateur gratuit.",
     url: "https://www.lamutuelledefrance.fr/mutuelle-sante/mutuelle-optique",
-    siteName: "Devis Mutuelle",
+    siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
   },

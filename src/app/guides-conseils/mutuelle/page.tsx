@@ -1,14 +1,12 @@
 import GuidesConeilsMutuelle from "@/Components/Guides/GuidesConeilsMutuelle";
+import { createSeoMetadata } from "@/lib/seo";
 
-
-export const metadata = {
-  title: "Guides & Conseils Mutuelle Santé | 100% Santé, Remboursements",
+export const metadata = createSeoMetadata({
+  title: "Guides et Conseils sur la Mutuelle Santé",
   description:
-    "Découvrez nos guides et conseils mutuelle santé : 100% Santé, lunettes gratuites, prothèses dentaires, remboursements et reste à charge.",
-  alternates: {
-    canonical: "https://lamutuelledefrance.fr/guides-conseils/mutuelle",
-  },
-};
+    "Découvrez nos guides sur le 100 % Santé, les remboursements, les lunettes et les soins dentaires.",
+  path: "/guides-conseils/mutuelle",
+});
 
 export default function Page() {
   return <GuidesConeilsMutuelle />;

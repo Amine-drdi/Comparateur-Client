@@ -117,12 +117,12 @@ export default function Accueil() {
               </p>
             </div>
 
-            <h1 className="mb-5 text-4xl font-extrabold text-blue-700 lg:text-6xl leading-tight">
+            <h2 className="mb-5 text-4xl font-extrabold text-blue-700 lg:text-6xl leading-tight">
               Économisez jusqu'à
               <span className="ml-3 inline-block bg-gradient-to-r from-green-500 to-green-600 px-6 py-2 text-white rounded-2xl shadow-xl transform -rotate-1 text-4xl">
                 40%
               </span>
-            </h1>
+            </h2>
 
             <p className="text-xl text-gray-600 mb-2 leading-relaxed">
               Comparez en 2 minutes les offres de plus de 30 assureurs partenaires

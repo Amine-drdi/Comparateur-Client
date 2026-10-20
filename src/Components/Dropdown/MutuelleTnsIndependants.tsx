@@ -312,25 +312,18 @@ const tnsSchema = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://devismutuelle.fr/#organization",
-      name: "Devis Mutuelle",
-      url: "https://devismutuelle.fr",
+      "@id": "https://www.lamutuelledefrance.fr/#organization",
+      name: "La Mutuelle de France",
+      url: "https://www.lamutuelledefrance.fr",
       logo: {
         "@type": "ImageObject",
-        url: "https://devismutuelle.fr/logo.png",
-      },
-      contactPoint: {
-        "@type": "ContactPoint",
-        telephone: "+33-1-00-00-00-00",
-        contactType: "sales",
-        areaServed: "FR",
-        availableLanguage: "French",
+        url: "https://www.lamutuelledefrance.fr/logo.png",
       },
     },
     {
       "@type": "Service",
       name: "Courtage Mutuelle TNS & Loi Madelin",
-      provider: { "@id": "https://devismutuelle.fr/#organization" },
+      provider: { "@id": "https://www.lamutuelledefrance.fr/#organization" },
       description:
         "Comparaison et souscription de complémentaires santé éligibles à la Loi Madelin pour les travailleurs non salariés (TNS).",
       areaServed: "FR",
@@ -341,17 +334,9 @@ const tnsSchema = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://devismutuelle.fr/mutuelle/tns-independants-loi-madelin",
+      "@id": "https://www.lamutuelledefrance.fr/mutuelle-sante/tns-independants-loi-madelin",
       name: "Mutuelle TNS & Indépendants : Comparatif Loi Madelin",
       description: "Tout savoir sur la mutuelle TNS et la fiscalité Madelin.",
-      breadcrumb: {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Accueil", item: "https://devismutuelle.fr" },
-          { "@type": "ListItem", position: 2, name: "Mutuelle", item: "https://devismutuelle.fr/mutuelle" },
-          { "@type": "ListItem", position: 3, name: "TNS & Indépendants" },
-        ],
-      },
     },
     {
       "@type": "FAQPage",
@@ -440,7 +425,7 @@ export default function MutuelleTnsIndependants() {
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.5-5.2-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z" />
                     </svg>
-                    Parler à un conseiller : 01 88 81 21 08
+                    Parler à un conseiller : 06 09 99 98 02
                   </SecondaryButton>
                 </div>
 

@@ -28,7 +28,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      name: "Simulateur Retraite Devis Mutuelle",
+      name: "Simulateur Retraite",
       applicationCategory: "FinanceApplication",
       operatingSystem: "Web",
       offers: { "@type": "Offer", price: "0", priceCurrency: "EUR", description: "Utilisation gratuite" },
@@ -38,7 +38,7 @@ const jsonLd = {
     {
       "@type": "FinancialService",
       name: "Service de Bilan Retraite",
-      provider: { "@type": "Organization", name: "Devis Mutuelle", telephone: "+33-1-88-81-21-08", url: "https://www.lamutuelledefrance.fr" },
+      provider: { "@type": "Organization", name: "La Mutuelle de France", url: "https://www.lamutuelledefrance.fr" },
       serviceType: "Retirement Planning",
     },
     {
@@ -89,7 +89,7 @@ export default function SimulateurRetraite() {
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
                   <PrimaryButton onClick={() => setOpen(true)}>Lancer la simulation (2 min)</PrimaryButton>
-                  <SecondaryButton href="tel:0188812108">Bilan par téléphone : 01 88 81 21 08</SecondaryButton>
+                  <SecondaryButton href="tel:0188812108">Bilan par téléphone : 06 09 99 98 02</SecondaryButton>
                 </div>
 
                 <div className="mt-6">
@@ -162,7 +162,7 @@ export default function SimulateurRetraite() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
               {/*<PrimaryButton onClick={() => setOpen(true)}>Accéder au Formulaire de Simulation</PrimaryButton>*/}
-              <SecondaryButton href="tel:0188812108">Être rappelé : 01 88 81 21 08</SecondaryButton>
+              <SecondaryButton href="tel:0188812108">Être rappelé : 06 09 99 98 02</SecondaryButton>
             </div>
           </section>
 

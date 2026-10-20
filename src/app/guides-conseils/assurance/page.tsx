@@ -1,15 +1,12 @@
 import GuidesConseilsAssurance from "@/Components/Guides/GuidesConseilsAssurance";
-import type { Metadata } from "next";
+import { createSeoMetadata } from "@/lib/seo";
 
-
-export const metadata: Metadata = {
-  title: "Guides & Conseils Assurance | Devis Mutuelle",
+export const metadata = createSeoMetadata({
+  title: "Guides et Conseils en Assurance",
   description:
-    "Guides pratiques : assurance emprunteur (Loi Lemoine), auto & habitation (Loi Hamon), malus, sinistres… pour payer moins et être mieux couvert.",
-  alternates: {
-    canonical: "https://devismutuelle.fr/guides-conseils/assurance",
-  },
-};
+    "Guides pratiques sur l’assurance emprunteur, l’assurance auto et l’assurance habitation.",
+  path: "/guides-conseils/assurance",
+});
 
 export default function Page() {
   return <GuidesConseilsAssurance />;

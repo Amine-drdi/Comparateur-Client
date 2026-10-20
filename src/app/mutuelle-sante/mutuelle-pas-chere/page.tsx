@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Mutuelle Pas Chère : Réduisez vos Cotisations Immédiatement",
     description: "Besoin d'économies ? Trouvez une mutuelle ajustée à vos besoins réels. Zéro superflu, juste l'essentiel pour être bien protégé. Comparateur gratuit.",
     url: "https://www.lamutuelledefrance.fr/mutuelle-sante/mutuelle-pas-chere",
-    siteName: "Devis Mutuelle",
+    siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
   },

@@ -26,12 +26,11 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "FinancialProduct",
-      name: "Solutions Épargne Senior Devis Mutuelle",
+      name: "Solutions d'épargne pour les seniors",
       description: "Sélection de contrats d'assurance vie et de capitalisation optimisés pour les seniors (sécurité, revenus, transmission).",
       provider: {
         "@type": "Organization",
-        name: "Devis Mutuelle",
-        telephone: "+33-1-88-81-21-08",
+        name: "La Mutuelle de France",
         url: "https://www.lamutuelledefrance.fr",
         logo: "https://www.lamutuelledefrance.fr/logo.png",
       },
@@ -87,7 +86,7 @@ export default function EpargneSenior() {
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
                   <PrimaryButton onClick={() => setOpen(true)}>Demander mon étude gratuite</PrimaryButton>
-                  <SecondaryButton href="tel:0188812108">Parler à un Expert : 01 88 81 21 08</SecondaryButton>
+                  <SecondaryButton href="tel:0188812108">Parler à un Expert : 06 09 99 98 02</SecondaryButton>
                 </div>
 
                 <div className="mt-6">
@@ -148,7 +147,7 @@ export default function EpargneSenior() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
               <PrimaryButton onClick={() => setOpen(true)}>Comparer ces solutions</PrimaryButton>
-              <SecondaryButton href="tel:0188812108">Conseiller : 01 88 81 21 08</SecondaryButton>
+              <SecondaryButton href="tel:0188812108">Conseiller : 06 09 99 98 02</SecondaryButton>
             </div>
           </section>
 

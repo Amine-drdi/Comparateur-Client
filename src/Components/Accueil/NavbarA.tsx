@@ -130,7 +130,7 @@ const NavbarA: React.FC = () => {
       },
       assureurs: {
         title: "Contact",
-        link: "/contact",
+        link: "/Contact",
         icon: HiOutlineUsers,
       },
     }),
@@ -198,7 +198,7 @@ const NavbarA: React.FC = () => {
             <div className="hidden sm:block h-4 w-px bg-gradient-to-b from-transparent via-blue-400/50 to-transparent"></div>
 
             <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 lg:gap-6 text-xs sm:text-sm">
-              <a href="tel:+33756663333" className="flex items-center gap-2 text-white/90 hover:text-white transition-all">
+              <a href="tel:+33609999802" className="flex items-center gap-2 text-white/90 hover:text-white transition-all">
                 <div className="w-9 h-9 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
                   <FaPhone className="text-base sm:text-base text-white" />
                 </div>
@@ -208,13 +208,13 @@ const NavbarA: React.FC = () => {
                 </div>
               </a>
 
-              <a href="mailto:contact@lamutuelledefrance.fr" className="hidden sm:flex items-center gap-2 text-white/90 hover:text-white transition-all">
+              <a href="mailto:contact@fidesconseil-patrimoine.fr" className="hidden sm:flex items-center gap-2 text-white/90 hover:text-white transition-all">
                 <div className="w-7 h-7 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
                   <FaEnvelope className="text-xs sm:text-sm text-white" />
                 </div>
                 <div className="hidden md:flex flex-col">
                   <span className="font-medium">Écrivez-nous</span>
-                  <span className="font-bold text-sm text-white tracking-tight">contact@lamutuelledefrance.fr</span>
+                  <span className="font-bold text-sm text-white tracking-tight">contact@fidesconseil-patrimoine.fr</span>
                 </div>
               </a>
 
@@ -238,8 +238,8 @@ const NavbarA: React.FC = () => {
               <div className="relative w-32 h-12">
                 {/* Remplacez par votre logo */}
                 <Image
-                  src="/images/logo.png" // Chemin vers votre logo dans public/
-                  alt="logo"
+                  src="/Image/logo.png"
+                  alt="Logo de La Mutuelle de France"
                   fill
                   className="object-contain"
                   priority

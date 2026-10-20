@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Mutuelle Senior : Quelle Assurance Choisir après 55 ans ?",
     description: "Ne payez plus pour des garanties inutiles (maternité). Trouvez une mutuelle ajustée à vos besoins réels : Hospitalisation, Dentaire et Auditif. Devis immédiat.",
     url: "https://www.lamutuelledefrance.fr/mutuelle-sante/mutuelle-senior",
-    siteName: "Devis Mutuelle",
+    siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
   },

@@ -30,8 +30,7 @@ const jsonLd = {
       description: "Produit d'épargne long terme permettant la constitution d'un capital retraite avec déductibilité fiscale des versements.",
       provider: {
         "@type": "Organization",
-        name: "Devis Mutuelle",
-        telephone: "+33-1-88-81-21-08",
+        name: "La Mutuelle de France",
         url: "https://www.lamutuelledefrance.fr",
         logo: "https://www.lamutuelledefrance.fr/logo.png",
       },
@@ -87,7 +86,7 @@ export default function PlanEpargneRetraitePER() {
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
                   <PrimaryButton onClick={() => setOpen(true)}>Calculer mon économie d’impôt</PrimaryButton>
-                  <SecondaryButton href="tel:0188812108">Expert PER : 01 88 81 21 08</SecondaryButton>
+                  <SecondaryButton href="tel:0188812108">Expert PER : 06 09 99 98 02</SecondaryButton>
                 </div>
 
                 <div className="mt-6">
@@ -135,7 +134,7 @@ export default function PlanEpargneRetraitePER() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
               <PrimaryButton onClick={() => setOpen(true)}>Vérifier mon éligibilité</PrimaryButton>
-              <SecondaryButton href="tel:0188812108">Conseiller : 01 88 81 21 08</SecondaryButton>
+              <SecondaryButton href="tel:0188812108">Conseiller : 06 09 99 98 02</SecondaryButton>
             </div>
           </section>
 
