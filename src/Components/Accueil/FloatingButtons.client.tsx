@@ -9,14 +9,14 @@ export default function FloatingButtons() {
   const [isModalOpen, setIsModalOpen] = React.useState(false);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "+33609999802"; // Remplacez par votre numéro
+    const phoneNumber = {/*"+33609999802"*/}; // Remplacez par votre numéro
     const message = "Bonjour, je souhaite obtenir des informations sur vos mutuelles.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");
   };
 
   const handleCallClick = () => {
-    window.location.href = "tel:+33609999802"; // Remplacez par votre numéro
+    window.location.href = "tel:+33099802"; // Remplacez par votre numéro
   };
 
   return (

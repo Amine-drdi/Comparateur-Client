@@ -151,13 +151,13 @@ export default function ContactPage() {
                   </div>
                   <h3 className="mt-6 text-2xl font-semibold text-blue-600">📞 Par Téléphone</h3>
                   <p className="mt-3 text-gray-600">Parlez directement à un expert pour une réponse claire et rapide. Appel non surtaxé.</p>
-                  <p className="mt-6 text-2xl font-bold text-blue-500">06 09 99 98 02</p>
+                  <p className="mt-6 text-2xl font-bold text-blue-500">{/*06 09 99 98 02*/}</p>
                   <p className="mt-2 text-gray-500">
                     <FaClock className="inline mr-2" />
                     Du lundi au vendredi, de 9h00 à 18h00.
                   </p>
                   <a 
-                    href="tel:+33609999802" 
+                    href="tel:+3369902" 
                     className="inline-flex items-center justify-center px-6 py-3 mt-6 text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors"
                   >
                     <FaPhoneAlt className="mr-2" />
@@ -177,7 +177,7 @@ export default function ContactPage() {
                   <p className="mt-6 text-2xl font-bold text-green-600">WhatsApp</p>
                   <p className="mt-2 text-gray-500">Réponse immédiate</p>
                   <a 
-                    href="https://wa.me/33609999802" 
+                    href="https://wa.me/3369802" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-6 py-3 mt-6 text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors"

@@ -206,7 +206,7 @@ const NavbarA: React.FC = () => {
                 <div className="flex flex-col">
                   <span className="font-medium">Numéro vert</span>
                   <span className="font-bold text-sm sm:text-base text-white tracking-wide">
-                    +33 6 09 99 98 02
+                   { /*+33 6 09 99 98 02*/}
                   </span>
                 </div>
               </a>
@@ -221,7 +221,7 @@ const NavbarA: React.FC = () => {
                 <div className="hidden md:flex flex-col">
                   <span className="font-medium">Écrivez-nous</span>
                   <span className="font-bold text-sm text-white tracking-tight">
-                    contact@fidesconseil-patrimoine.fr
+                    {/*contact@fidesconseil-patrimoine.fr*/}
                   </span>
                 </div>
               </a>

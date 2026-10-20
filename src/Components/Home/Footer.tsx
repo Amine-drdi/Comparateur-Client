@@ -206,7 +206,7 @@ export default function Footer() {
                   href="tel:+33609999802"
                   className="text-slate-300 hover:text-blue-400 transition-colors text-xs md:text-sm"
                 >
-                  +33 6 09 99 98 02
+                 {/* +33 6 09 99 98 02*/}
                 </a>
               </div>
             </div>
@@ -222,7 +222,7 @@ export default function Footer() {
                   href="mailto:contact@fidesconseil-patrimoine.fr"
                   className="text-slate-300 hover:text-orange-400 transition-colors text-xs md:text-sm break-all"
                 >
-                  contact@fidesconseil-patrimoine.fr
+                  {/*contact@fidesconseil-patrimoine.fr*/}
                 </a>
               </div>
             </div>
@@ -258,7 +258,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
           <div className="text-center md:text-left order-2 md:order-1">
             <p className="text-slate-300 text-xs md:text-sm mb-1">
-              © 2025 <span className="font-semibold text-white">La Mutuelle De France</span>{" "}
+              © 2026 <span className="font-semibold text-white">La Mutuelle De France</span>{" "}
               - Tous droits réservés
             </p>
             <p className="text-slate-400 text-xs">
