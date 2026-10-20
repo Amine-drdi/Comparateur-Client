@@ -208,13 +208,13 @@ const NavbarA: React.FC = () => {
                 </div>
               </a>
 
-              <a href="mailto:contact@fidesconseil-patrimoine.fr" className="hidden sm:flex items-center gap-2 text-white/90 hover:text-white transition-all">
+              <a href="mailto:contact@mutuelle.fr" className="hidden sm:flex items-center gap-2 text-white/90 hover:text-white transition-all">
                 <div className="w-7 h-7 sm:w-8 sm:h-8 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
                   <FaEnvelope className="text-xs sm:text-sm text-white" />
                 </div>
                 <div className="hidden md:flex flex-col">
                   <span className="font-medium">Écrivez-nous</span>
-                  <span className="font-bold text-sm text-white tracking-tight">contact@fidesconseil-patrimoine.fr</span>
+                  <span className="font-bold text-sm text-white tracking-tight">contact@mutuelle.fr</span>
                 </div>
               </a>
 

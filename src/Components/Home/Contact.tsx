@@ -439,8 +439,8 @@ export default function ContactPage() {
               <p className="mt-3 text-gray-600">Service Clientèle & Courtage</p>
               <div className="mt-6 flex items-center justify-center text-gray-700">
                 <FaEnvelope className="mr-2 text-blue-500" />
-                <a href="mailto:contact@fidesconseil-patrimoine.fr" className="hover:text-blue-600">
-                  contact@fidesconseil-patrimoine.fr
+                <a href="mailto:contact@mutuelle.fr" className="hover:text-blue-600">
+                  contact@mutuelle.fr
                 </a>
               </div>
             </div>
@@ -492,8 +492,8 @@ export default function ContactPage() {
                 <p className="text-gray-700">
                   Votre satisfaction est notre priorité. En cas de mécontentement, vous pouvez contacter 
                   notre service qualité à l'adresse{" "}
-                  <a href="mailto:contact@fidesconseil-patrimoine.fr" className="text-blue-600 hover:underline">
-                    contact@fidesconseil-patrimoine.fr
+                  <a href="mailto:contact@mutuelle.fr" className="text-blue-600 hover:underline">
+                    contact@mutuelle.fr
                   </a>. 
                   Nous nous engageons à traiter votre demande sous 48h.
                 </p>

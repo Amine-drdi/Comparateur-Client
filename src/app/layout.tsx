@@ -14,6 +14,8 @@ export const metadata: Metadata = {
 
   keywords: [
     "comparateur mutuelle santé",
+    "Meilleur comparateur mutuelle",
+    "les meilleures mutuelles santé",
     "devis mutuelle gratuit",
     "mutuelle santé pas chère",
     "mutuelle senior",
@@ -21,7 +23,20 @@ export const metadata: Metadata = {
     "mutuelle famille",
     "comparaison assurance santé",
     "changer de mutuelle santé",
-    "résilier mon contrat mutuelle santé"
+    "résilier mon contrat mutuelle santé",
+    "Prix mutuelle santé par mois",
+    "Prix mutuelle France",
+    "prix mutuelle pour 2 personnes",
+    "Comparateur mutuelle senior",
+    "Devis mutuelle en ligne anonyme",
+    "Devis mutuelle santé sans coordonnées",
+    "Mutuelle en ligne immédiate",
+    "APICIL Mutuelle tarifs",
+    "april mutuelle",
+    "april",
+    "april mutuelle tableau de garantie",
+    "Mutuelle Néoliane remboursement",
+    "Néoliane mutuelle tableau de garantie"
   ],
 
   robots: {

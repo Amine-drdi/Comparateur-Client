@@ -219,10 +219,10 @@ export default function Footer() {
               <div>
                 <p className="font-medium text-sm md:text-base">Email</p>
                 <a
-                  href="mailto:contact@fidesconseil-patrimoine.fr"
+                  href="mailto:contact@mutuelle.fr"
                   className="text-slate-300 hover:text-orange-400 transition-colors text-xs md:text-sm break-all"
                 >
-                  {/*contact@fidesconseil-patrimoine.fr*/}
+                  {/*contact@mutuelle.fr*/}
                 </a>
               </div>
             </div>

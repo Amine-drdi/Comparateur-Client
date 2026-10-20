@@ -9,7 +9,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 const FROM_EMAIL = 'noreply@fidesconseil-patrimoine.fr';
 
 // 📬 Email admin qui reçoit la notification de chaque lead
-const ADMIN_EMAIL = 'contact@fidesconseil-patrimoine.fr';
+const ADMIN_EMAIL = 'contact@mutuelle.fr';
 
 export async function POST(request: NextRequest) {
   try {
@@ -107,7 +107,7 @@ export async function POST(request: NextRequest) {
       console.error('❌ Email client exception:', err);
     }
 
-    // 4b. Email de notification à l'ADMIN (contact@fidesconseil-patrimoine.fr)
+    // 4b. Email de notification à l'ADMIN (contact@mutuelle.fr)
     try {
       const adminEmailResult = await resend.emails.send({
         from: FROM_EMAIL,
