@@ -1,6 +1,7 @@
 import FloatingButtons from "@/Components/Accueil/FloatingButtons.client";
 import "./globals.css";
 import type { Metadata } from "next";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.lamutuelledefrance.fr"),
@@ -97,6 +98,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         {/* Boutons flottants */}
         <FloatingButtons />
+        <Analytics />
       </body>
     </html>
   );
