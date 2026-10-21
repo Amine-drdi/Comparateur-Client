@@ -1,26 +1,29 @@
-
 import MutuelleOptiquePage from "@/Components/Dropdown/MutuelleOptique";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mutuelle Optique : Vos Lunettes, Lentilles & Laser Bien Remboursés",
-  description: "Lunettes trop chères ? La Sécu rembourse peu. Comparez les mutuelles optiques avec forfaits renforcés : verres complexes, lentilles et chirurgie réfractive. Devis gratuit.",
+  title: "Mutuelle optique : lunettes, lentilles et chirurgie laser | La Mutuelle de France",
+  description:
+    "Comparez les meilleures mutuelles optique pour réduire le coût de vos lunettes, lentilles et soins visuels. Trouvez la couverture la plus adaptée à votre budget.",
   keywords: [
     "mutuelle optique",
+    "mutuelle optique pas chère",
     "remboursement lunettes",
     "mutuelle lentilles de contact",
-    "remboursement chirurgie réfractive",
     "assurance lunettes",
-    "mutuelle optique pas chère",
+    "chirurgie réfractive",
+    "comparateur mutuelle optique",
+    "devis mutuelle gratuit",
+    "mutuelle santé optique",
     "forfait optique",
-    "100% santé optique"
   ],
   alternates: {
     canonical: "https://www.lamutuelledefrance.fr/mutuelle-sante/mutuelle-optique",
   },
   openGraph: {
-    title: "Mutuelle Optique : Réduisez votre Reste à Charge",
-    description: "Besoin de nouvelles lunettes ou de lentilles ? Trouvez la mutuelle qui rembourse le mieux vos équipements optiques et l'opération laser. Comparateur gratuit.",
+    title: "Mutuelle optique : réduisez votre reste à charge",
+    description:
+      "Besoin de nouvelles lunettes ou de lentilles ? Trouvez une mutuelle optique adaptée à vos besoins et à votre budget. Devis gratuit.",
     url: "https://www.lamutuelledefrance.fr/mutuelle-sante/mutuelle-optique",
     siteName: "La Mutuelle de France",
     locale: "fr_FR",
@@ -33,8 +36,8 @@ export const metadata: Metadata = {
   other: {
     "geo.region": "FR",
     "geo.placename": "France",
-    "audience": "porteurs de lunettes, seniors, myopes, astigmates",
-    "intent": "comparaison remboursement optique, devis mutuelle",
+    audience: "porteurs de lunettes, seniors, myopes, astigmates",
+    intent: "comparaison remboursement optique, devis mutuelle",
   },
 };
 

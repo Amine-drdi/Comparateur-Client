@@ -3,52 +3,46 @@ import type { Metadata } from "next";
 
 import MutuellePasCherePage from "@/Components/Dropdown/MutuellePasChere";
 
-// Métadonnées SEO
 export const metadata: Metadata = {
-  // Titre : Promesse principale (Pas Chère) + Argument rassurant (100% Santé / Protection)
-  title: "Mutuelle Pas Chère : Devis Gratuit & 100% Santé Inclus",
-  
-  // Description : Attaque sur le budget, mentionne les cibles (Seniors/Familles) et l'action (Comparer).
-  description: "Assurez-vous à petit prix sans sacrifier l'essentiel. Comparez les mutuelles pas chères : couverture hospitalisation, optique et dentaire 100% Santé. Devis immédiat.",
-  
+  title: "Mutuelle pas chère : comparez le meilleur tarif santé | La Mutuelle de France",
+  description:
+    "Trouvez une mutuelle santé pas chère tout en gardant une bonne couverture. Comparez les garanties, les tarifs et les offres adaptées à votre budget. Devis gratuit.",
   keywords: [
     "mutuelle pas chère",
-    "assurance santé économique",
+    "meilleure mutuelle pas chère",
+    "prix mutuelle santé",
+    "mutuelle santé pas chère",
+    "comparateur mutuelle santé",
     "mutuelle senior pas chère",
-    "complémentaire santé petit budget",
-    "mutuelle hospitalisation seule",
-    "100% santé mutuelle",
-    "comparateur mutuelle moins chère"
+    "mutuelle famille pas chère",
+    "mutuelle en ligne",
+    "devis mutuelle gratuit",
+    "mutuelle santé économique",
   ],
-  
   alternates: {
-    // Note : URL normalisée (minuscules, sans accents) pour le SEO technique
     canonical: "https://www.lamutuelledefrance.fr/mutuelle-sante/mutuelle-pas-chere",
   },
-  
   openGraph: {
-    title: "Mutuelle Pas Chère : Réduisez vos Cotisations Immédiatement",
-    description: "Besoin d'économies ? Trouvez une mutuelle ajustée à vos besoins réels. Zéro superflu, juste l'essentiel pour être bien protégé. Comparateur gratuit.",
+    title: "Mutuelle pas chère : comparez le meilleur tarif santé",
+    description:
+      "Besoin d’économiser sur votre mutuelle santé ? Trouvez une offre adaptée à votre budget et à vos garanties. Comparateur gratuit et sans engagement.",
     url: "https://www.lamutuelledefrance.fr/mutuelle-sante/mutuelle-pas-chere",
     siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
   },
-  
   robots: {
     index: true,
     follow: true,
   },
-  
   other: {
     "geo.region": "FR",
     "geo.placename": "France",
-    "audience": "budget serré, étudiants, seniors, familles économes",
-    "intent": "économie, comparaison prix, couverture essentielle",
+    audience: "budget serré, étudiants, seniors, familles économes",
+    intent: "économie, comparaison prix, couverture essentielle",
   },
 };
 
-// Composant de page
 export default function Page() {
   return <MutuellePasCherePage />;
 }
