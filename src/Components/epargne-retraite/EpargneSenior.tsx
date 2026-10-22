@@ -90,7 +90,12 @@ export default function EpargneSenior() {
                 </div>
 
                 <div className="mt-6">
-                  <InlineLinks items={[{ href: "/assurance-obseques", label: "Assurance Obsèques" }]} />
+                  <InlineLinks
+                    items={[
+                      { href: "/epargne-retraite/preparer-sa-retraite", label: "Préparer sa retraite" },
+                      { href: "/Contact", label: "Demander une étude personnalisée" },
+                    ]}
+                  />
                 </div>
               </div>
 

@@ -15,7 +15,7 @@ const HealthInsuranceMenuWithNavbar = () => {
             <h2 className="font-medium text-gray-700">Assurance et mutuelle santé</h2>
           </div>
             
-          <a href="/compare" className="block">
+          <a href="/comparateur-mutuelle-sante" className="block">
   <button className="w-full bg-orange-400 hover:bg-orange-500 text-white font-medium py-3 px-4 rounded text-center transition-colors">
     Obtenir un devis
   </button>
@@ -25,12 +25,12 @@ const HealthInsuranceMenuWithNavbar = () => {
             <h3 className="font-medium text-gray-700 mb-2">Nos produits</h3>
             
             <ul className="space-y-2">
-              <li><a href="/InsuranceComparison" className="text-blue-400 hover:text-blue-500">Mutuelle santé</a></li>
-              <li><a href="/mutuelleEntreprise" className="text-blue-400 hover:text-blue-500">Mutuelle d'entreprise</a></li>
-              <li><a href="/optique" className="text-blue-400 hover:text-blue-500">Besoin optique</a></li>
-              <li><a href="/dentaire" className="text-blue-400 hover:text-blue-500">Besoin dentaire</a></li>
-              <li><a href="#" className="text-blue-400 hover:text-blue-500">Besoin orthodontie</a></li>
-              <li><a href="#" className="text-blue-400 hover:text-blue-500">Assurance santé expatriés</a></li>
+              <li><a href="/comparateur-mutuelle-sante" className="text-blue-400 hover:text-blue-500">Mutuelle santé</a></li>
+              <li><a href="/mutuelle-sante/comparateur-mutuelle" className="text-blue-400 hover:text-blue-500">Mutuelle d'entreprise</a></li>
+              <li><a href="/mutuelle-sante/mutuelle-optique" className="text-blue-400 hover:text-blue-500">Besoin optique</a></li>
+              <li><a href="/mutuelle-sante/mutuelle-dentaire" className="text-blue-400 hover:text-blue-500">Besoin dentaire</a></li>
+              <li><a href="/mutuelle-sante/mutuelle-dentaire" className="text-blue-400 hover:text-blue-500">Besoin orthodontie</a></li>
+              <li><a href="/comparateur-mutuelle-sante" className="text-blue-400 hover:text-blue-500">Assurance santé expatriés</a></li>
             </ul>
           </div>
         </div>
@@ -41,13 +41,13 @@ const HealthInsuranceMenuWithNavbar = () => {
             <h2 className="text-gray-700 mb-2">Vous êtes</h2>
             
             <ul className="space-y-2">
-              <li><a href="#" className="text-blue-400 hover:text-blue-500">Senior / Retraité</a></li>
-              <li><a href="#" className="text-blue-400 hover:text-blue-500">Travailleur Non Salarié (TNS)</a></li>
-              <li><a href="#" className="text-blue-400 hover:text-blue-500">Demandeur d'emploi</a></li>
-              <li><a href="#" className="text-blue-400 hover:text-blue-500">Fonctionnaire</a></li>
-              <li><a href="#" className="text-blue-400 hover:text-blue-500">Profession libérale</a></li>
-              <li><a href="#" className="text-blue-400 hover:text-blue-500">Auto entrepreneur</a></li>
-              <li><a href="#" className="text-blue-400 hover:text-blue-500">Etudiant</a></li>
+              <li><a href="/mutuelle-sante/mutuelle-senior" className="text-blue-400 hover:text-blue-500">Senior / Retraité</a></li>
+              <li><a href="/mutuelle-sante/tns-independants-loi-madelin" className="text-blue-400 hover:text-blue-500">Travailleur Non Salarié (TNS)</a></li>
+              <li><a href="/comparateur-mutuelle-sante" className="text-blue-400 hover:text-blue-500">Demandeur d'emploi</a></li>
+              <li><a href="/comparateur-mutuelle-sante" className="text-blue-400 hover:text-blue-500">Fonctionnaire</a></li>
+              <li><a href="/mutuelle-sante/tns-independants-loi-madelin" className="text-blue-400 hover:text-blue-500">Profession libérale</a></li>
+              <li><a href="/mutuelle-sante/tns-independants-loi-madelin" className="text-blue-400 hover:text-blue-500">Auto entrepreneur</a></li>
+              <li><a href="/comparateur-mutuelle-sante" className="text-blue-400 hover:text-blue-500">Etudiant</a></li>
             </ul>
           </div>
           

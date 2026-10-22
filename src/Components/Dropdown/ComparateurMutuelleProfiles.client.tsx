@@ -144,14 +144,14 @@ export default function ComparateurMutuelleProfiles({
       <div className="grid gap-6 md:grid-cols-3">
         <Card title="Mutuelle Senior">
           <p>Renfort hospitalisation, optique et audiologie.</p>
-          <Link href="/mutuelle-senior" className="mt-3 inline-block text-blue-500 font-medium">
+          <Link href="/mutuelle-sante/mutuelle-senior" className="mt-3 inline-block text-blue-500 font-medium">
             Découvrir →
           </Link>
         </Card>
 
         <Card title="Mutuelle Famille" highlight>
           <p>Protection complète pour parents et enfants.</p>
-          <Link href="/mutuelle-famille" className="mt-3 inline-block text-blue-500 font-medium">
+          <Link href="/mutuelle-sante/mutuelle-famille" className="mt-3 inline-block text-blue-500 font-medium">
             Découvrir →
           </Link>
         </Card>

@@ -35,7 +35,7 @@ interface SocialItem {
 }
 
 const LiensRapide: LinkItem[] = [
-  { title: "Accueil", link: "/home" },
+  { title: "Accueil", link: "/" },
  // { title: "Qui sommes-nous", link: "" },
  // { title: "Assurances", link: "s" },
   { title: "Contact", link: "/Contact" },

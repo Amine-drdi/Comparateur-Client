@@ -614,7 +614,7 @@ export default function ChangerMutuellePage() {
                     title: "En cas d'augmentation injustifiée", 
                     desc: "Comparer permet d'éviter de payer trop cher pour des garanties inutiles ou insuffisantes", 
                     icon: "💰",
-                    link: "/comparateur-mutuelle"
+                    link: "/comparateur-mutuelle-sante"
                   },
                 ].map((item) => (
                   <div
@@ -702,14 +702,14 @@ export default function ChangerMutuellePage() {
                   q="Puis-je changer de mutuelle sans attendre la date anniversaire ?"
                   a={
                     <div>
-                      <p className="mb-3 text-green-600 font-semibold">Oui, absolument, à condition que votre contrat ait plus d'un an.</p>
-                      <p className="mb-3">Depuis l'entrée en vigueur de la <strong>Loi Infra-annuelle (décembre 2020)</strong>, vous n'êtes plus obligé d'attendre l'échéance annuelle ou de respecter le préavis de 2 mois à date fixe.</p>
+                      <p className="mb-3 text-green-600 font-semibold">Pour un contrat individuel de complémentaire santé, la résiliation infra-annuelle est généralement possible après un an d’adhésion.</p>
+                      <p className="mb-3">La résiliation prend effet un mois après la réception de la notification par l’organisme assureur. Les possibilités de résiliation avant un an dépendent des motifs prévus par la loi ou le contrat.</p>
                       
                       <div className="bg-blue-50 rounded-lg p-3 mb-3">
                         <h4 className="font-semibold text-blue-800 mb-2">Détails selon l'ancienneté :</h4>
                         <ul className="list-disc pl-4 space-y-1 text-sm">
-                          <li><strong>Avant 1 an :</strong> Vous devez attendre la première date anniversaire, sauf changement de situation (déménagement, mariage, changement de profession) qui permet une résiliation anticipée.</li>
-                          <li><strong>Après 1 an :</strong> Vous êtes libre de résilier <strong>à tout moment</strong>, sans justification et sans frais. La résiliation prendra effet un mois après la notification à votre assureur actuel.</li>
+                          <li><strong>Avant 1 an :</strong> Une résiliation anticipée n’est possible que dans certains cas ; vérifiez les conditions applicables à votre situation.</li>
+                          <li><strong>Après 1 an :</strong> Pour les contrats concernés, vous pouvez demander une résiliation sans frais. Elle prend effet un mois après réception de la notification.</li>
                         </ul>
                       </div>
                     </div>
@@ -719,15 +719,15 @@ export default function ChangerMutuellePage() {
                   q="Vais-je avoir une interruption de couverture ?"
                   a={
                     <div>
-                      <p className="mb-3 text-green-600 font-semibold">Non, la continuité de vos droits est garantie.</p>
-                      <p className="mb-3">Lorsque vous changez de mutuelle, tout est orchestré pour qu'il n'y ait aucune "carence" (période sans assurance) entre les deux contrats.</p>
+                      <p className="mb-3 text-green-600 font-semibold">La continuité n’est pas automatique : vérifiez les dates de fin et de prise d’effet auprès des organismes concernés.</p>
+                      <p className="mb-3">Le nouvel organisme peut, dans les cas prévus, effectuer les démarches de résiliation. Cela ne dispense pas de confirmer l’acceptation et la date d’effet de votre nouveau contrat.</p>
                       
                       <div className="bg-green-50 rounded-lg p-3 mb-3">
-                        <h4 className="font-semibold text-green-800 mb-2">Comment ça marche ?</h4>
+                        <h4 className="font-semibold text-green-800 mb-2">Les dates à confirmer :</h4>
                         <ol className="list-decimal pl-4 space-y-1 text-sm">
-                          <li>Vous souscrivez votre nouvelle mutuelle avec une <strong>date d'effet</strong> précise (par exemple le 1er mai).</li>
-                          <li>Votre nouvel assureur demande la résiliation de l'ancien contrat pour la veille (le 30 avril).</li>
-                          <li>Le basculement se fait automatiquement. Vous êtes couvert par l'ancienne mutuelle jusqu'au dernier soir, et par la nouvelle dès le lendemain matin.</li>
+                          <li>La confirmation de l’adhésion et la date de prise d’effet du nouveau contrat.</li>
+                          <li>La date de réception de la demande de résiliation par l’ancien organisme.</li>
+                          <li>La date effective de fin des garanties de l’ancien contrat.</li>
                         </ol>
                       </div>
                     </div>
@@ -737,14 +737,14 @@ export default function ChangerMutuellePage() {
                   q="Est-ce que le changement est gratuit ?"
                   a={
                     <div>
-                      <p className="mb-3 text-green-600 font-semibold">Oui, c'est une procédure 100 % gratuite.</p>
-                      <p className="mb-3">La loi interdit formellement aux assureurs d'appliquer des frais de résiliation ou des pénalités financières si votre contrat a plus de 12 mois d'ancienneté.</p>
+                      <p className="mb-3 text-green-600 font-semibold">La résiliation infra-annuelle des contrats concernés est sans frais après un an d’adhésion.</p>
+                      <p className="mb-3">La fin du contrat intervient selon le délai applicable après réception de la demande. Vérifiez la date communiquée par l’organisme et les sommes dues jusqu’à cette date.</p>
                       
                       <div className="bg-yellow-50 rounded-lg p-3 mb-3">
-                        <h4 className="font-semibold text-yellow-800 mb-2">De plus, si vous utilisez notre comparateur :</h4>
+                        <h4 className="font-semibold text-yellow-800 mb-2">Avant de finaliser votre changement :</h4>
                         <ul className="list-disc pl-4 space-y-1 text-sm">
-                          <li>Nous ne facturons <strong>aucuns frais de dossier</strong>.</li>
-                          <li>Votre nouvel assureur prend en charge toutes les démarches administratives (courriers recommandés, notifications) gratuitement à votre place. Vous n'avez même pas besoin d'acheter un timbre.</li>
+                          <li>Confirmez les dates de fin et de prise d’effet pour organiser la continuité.</li>
+                          <li>Vérifiez avec le nouvel organisme s’il peut effectuer la résiliation dans votre situation.</li>
                         </ul>
                       </div>
                     </div>

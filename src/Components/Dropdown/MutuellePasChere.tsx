@@ -489,7 +489,7 @@ export default function MutuellePasCherePage() {
                     <Link href="/mutuelle-sante/mutuelle-senior" className="text-xs text-blue-600 hover:text-blue-800 font-medium">
                       Mutuelle Senior →
                     </Link>
-                    <Link href="/mutuelle-sante/changer-de-mutuelle" className="text-xs text-blue-600 hover:text-blue-800 font-medium">
+                    <Link href="/mutuelle-sante/changer-mutuelle" className="text-xs text-blue-600 hover:text-blue-800 font-medium">
                       Changer de Mutuelle →
                     </Link>
                   </div>

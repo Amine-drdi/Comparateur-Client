@@ -524,7 +524,7 @@ export default function MutuelleTnsIndependants() {
                   <p>
                     Les micro-entrepreneurs ne peuvent pas déduire les cotisations Madelin (abattement
                     forfaitaire). Pour eux :{" "}
-                    <Link className="text-blue-700 font-semibold hover:underline" href="/mutuelle/auto-entrepreneur">
+                    <Link className="text-blue-700 font-semibold hover:underline" href="/mutuelle-sante/tns-independants-loi-madelin">
                       offres spécifiques à petit prix
                     </Link>
                     .
@@ -666,7 +666,7 @@ export default function MutuelleTnsIndependants() {
                       <PrimaryButton onClick={() => setIsCallbackModalOpen(true)}>
                         Je demande mon devis
                       </PrimaryButton>
-                      <SecondaryButton href="/comparateur-mutuelle">Comparer en 2 min</SecondaryButton>
+                      <SecondaryButton href="/comparateur-mutuelle-sante">Comparer en 2 min</SecondaryButton>
                     </div>
                   </div>
                 </div>

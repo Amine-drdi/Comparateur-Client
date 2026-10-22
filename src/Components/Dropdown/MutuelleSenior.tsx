@@ -532,7 +532,7 @@ export default function MutuelleSeniorPage() {
 
                 <StepCard step={2} title="Comparez plusieurs devis adaptés à votre âge">
                   <p>Plus vous avancez en âge, plus les prix varient. Grâce à notre <strong className="text-blue-600">comparateur</strong>, vous identifiez rapidement les offres les plus pertinentes.</p>
-                  <Link href="/comparateur-mutuelle" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold text-sm mt-2">
+                  <Link href="/comparateur-mutuelle-sante" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold text-sm mt-2">
                     Utiliser le comparateur →
                   </Link>
                 </StepCard>
@@ -814,7 +814,7 @@ export default function MutuelleSeniorPage() {
                         <span>réduire votre coût annuel jusqu'à 40%</span>
                       </li>
                     </ul>
-                    <PrimaryButton href="/resiliation-mutuelle">
+                    <PrimaryButton href="/mutuelle-sante/resiliation-mutuelle">
                       En savoir plus sur la résiliation
                     </PrimaryButton>
                   </div>
@@ -914,7 +914,7 @@ export default function MutuelleSeniorPage() {
                           <li>Vous ne subissez aucune coupure de couverture.</li>
                         </ol>
                       </div>
-                      <Link href="/resiliation-mutuelle" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold text-sm">
+                      <Link href="/mutuelle-sante/resiliation-mutuelle" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold text-sm">
                         Tout savoir sur la résiliation facile →
                       </Link>
                     </div>

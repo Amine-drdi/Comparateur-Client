@@ -40,26 +40,40 @@ const images = {
 
 const GUIDES: GuideCard[] = [
   {
-    title: "Tout savoir sur le PER, l'Assurance Vie et la Défiscalisation : Le Guide Complet 2026",
+    title: "Préparer sa retraite : PER, assurance vie et fiscalité",
     href: "/epargne-retraite/preparer-sa-retraite",
     category: "Épargne & Retraite",
     readingTime: "8–12 min",
     excerpt:
-      "Préparer sa retraite n’est plus une option : baisse des pensions, inflation, fiscalité… Découvrez comment transformer vos impôts en patrimoine grâce au PER, à l’Assurance Vie et à une stratégie diversifiée.",
+      "Découvrez les principales différences entre le PER et l’assurance vie, leurs règles fiscales et les questions à examiner selon votre situation.",
     bullets: [
-      "Pourquoi agir tôt : intérêts composés + protection du pouvoir d’achat.",
-      "PER : déduction fiscale à l’entrée (réduction immédiate d’impôt).",
-      "Assurance Vie : souplesse, fiscalité optimisée après 8 ans + transmission.",
-      "PER vs Assurance Vie : les cumuler est souvent la meilleure stratégie.",
+      "Comparer disponibilité de l’épargne et modalités de sortie.",
+      "Vérifier les conditions de déduction fiscale du PER.",
+      "Examiner frais, risques et garanties de chaque contrat.",
+      "Demander un conseil adapté à votre situation personnelle.",
     ],
     ctaLabel: "Lire le guide complet 2026",
+  },
+  {
+    title: "Mutuelle à la retraite : comparer les garanties et le maintien du contrat",
+    href: "/guides-conseils/retraite/choisir-mutuelle-retraite",
+    category: "Mutuelle & Retraite",
+    readingTime: "6 min",
+    excerpt:
+      "Départ à la retraite, maintien éventuel de la couverture collective et besoins de santé : les éléments à examiner avant de choisir.",
+    bullets: [
+      "Comparer les garanties de l’ancien contrat et des contrats individuels.",
+      "Vérifier les conditions et cotisations en cas de maintien.",
+      "Prioriser les besoins en optique, dentaire et hospitalisation.",
+    ],
+    ctaLabel: "Lire le guide mutuelle retraite",
   },
 ];
 
 const SEO = {
-  title: "Tout sur le PER, l'Assurance Vie & la Défiscalisation | Guide 2026",
+  title: "Guides retraite : PER, assurance vie et mutuelle à la retraite",
   description:
-    "Le guide ultime pour préparer votre retraite et réduire vos impôts. Comparatif PER vs Assurance Vie, plafonds de déduction et conseils d'experts Devis Mutuelle.",
+    "Comparez les solutions pour préparer la retraite et découvrez les points à vérifier pour choisir une mutuelle adaptée lors du départ à la retraite.",
   canonical: "https://www.lamutuelledefrance.fr/guides-conseils/retraite",
   ogImage: "https://www.lamutuelledefrance.fr/images/PlanEpargneRetraite.jpg",
 };
@@ -79,9 +93,9 @@ const jsonLd = {
     },
     {
       "@type": "Article",
-      headline: "Tout savoir sur le PER, l'Assurance Vie et la Défiscalisation : Le Guide Complet 2026",
+      headline: "Guides retraite : PER, assurance vie et mutuelle à la retraite",
       description:
-        "Dossier complet sur l'épargne retraite. Apprenez à choisir entre PER et Assurance Vie pour optimiser votre fiscalité.",
+        "Guides pratiques sur la préparation financière de la retraite et le choix d'une couverture santé adaptée.",
       image: SEO.ogImage,
       publisher: { "@id": "https://www.lamutuelledefrance.fr/#organization" },
       mainEntityOfPage: { "@type": "WebPage", "@id": SEO.canonical },

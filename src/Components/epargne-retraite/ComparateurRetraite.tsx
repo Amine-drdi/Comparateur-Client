@@ -93,7 +93,7 @@ export default function ConseilsAvantagesFiscaux() {
                     items={[
                       { href: "/epargne-retraite/preparer-sa-retraite", label: "Préparer sa Retraite" },
                       { href: "/epargne-retraite/plan-epargne-retraite-per", label: "Tout savoir sur le PER" },
-                      { href: "/assurance-vie", label: "Assurance Vie" },
+                      { href: "/epargne-retraite/preparer-sa-retraite", label: "Préparer sa retraite" },
                     ]}
                   />
                 </div>

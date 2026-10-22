@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/seo";
+import { GUIDE_ARTICLES } from "@/lib/guideArticles";
 
 const publicRoutes = [
   "/",
@@ -29,7 +30,9 @@ const publicRoutes = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return publicRoutes.map((path) => ({
+  return [...publicRoutes, ...GUIDE_ARTICLES.map(
+    ({ category, slug }) => `/guides-conseils/${category}/${slug}`,
+  )].map((path) => ({
     url: new URL(path, SITE_URL).toString(),
   }));
 }

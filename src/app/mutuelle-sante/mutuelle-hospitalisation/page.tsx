@@ -1,42 +1,23 @@
 
 import MutuelleHospitalisationPage from "@/Components/Dropdown/MutuelleHospitalisation";
-import type { Metadata } from "next";
+import { createSeoMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Mutuelle Hospitalisation : Votre Séjour 100% Remboursé (Devis)",
-  description: "Anticipez les coups durs à moindre coût. Comparez les mutuelles hospitalisation seule : prise en charge chirurgie, anesthésie et chambre particulière. Devis gratuit.",
+export const metadata = createSeoMetadata({
+  title: "Mutuelle hospitalisation : comparez les garanties et les tarifs",
+  description:
+    "Comparez les garanties d’une mutuelle hospitalisation : frais de séjour, forfait journalier, honoraires et chambre particulière. Demandez un devis gratuit et sans engagement.",
+  path: "/mutuelle-sante/mutuelle-hospitalisation",
   keywords: [
     "mutuelle hospitalisation",
-    "assurance hospitalisation seule",
-    "mutuelle chirurgie",
-    "remboursement chambre particulière",
+    "mutuelle hospitalisation seule",
+    "remboursement hospitalisation",
+    "prise en charge chambre particulière",
     "forfait journalier hospitalier",
-    "mutuelle coup dur",
-    "assurance santé économique",
-    "dépassements d'honoraires chirurgien"
+    "dépassements d'honoraires hospitalisation",
+    "devis mutuelle hospitalisation",
+    "comparateur mutuelle santé",
   ],
-  alternates: {
-    canonical: "https://www.lamutuelledefrance.fr/mutuelle-sante/mutuelle-hospitalisation",
-  },
-  openGraph: {
-    title: "Mutuelle Hospitalisation : Couvrez l'Essentiel à Petit Prix",
-    description: "Pourquoi payer pour l'inutile ? Optez pour une couverture ciblée sur l'hospitalisation (Frais de séjour, Chirurgie, Chambre privée). Idéal pour réduire votre budget.",
-    url: "https://www.lamutuelledefrance.fr/mutuelle-sante/mutuelle-hospitalisation",
-    siteName: "La Mutuelle de France",
-    locale: "fr_FR",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-  other: {
-    "geo.region": "FR",
-    "geo.placename": "France",
-    "audience": "seniors, indépendants, petits budgets, personnes hospitalisées",
-    "intent": "comparaison assurance hospitalisation, devis chirurgie, économie santé",
-  },
-};
+});
 
 export default function Page() {
   return <MutuelleHospitalisationPage />;

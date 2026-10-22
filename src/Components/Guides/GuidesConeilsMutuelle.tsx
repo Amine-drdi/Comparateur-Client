@@ -36,19 +36,88 @@ const images = {
 
 const BLOGS: BlogCard[] = [
   {
-    title: "100% Santé : Quelles lunettes et prothèses dentaires sont vraiment gratuites en 2026 ?",
-    href: "/guides-conseils/mutuelle/100-sante-lunettes-protheses-dentaires-gratuites-2026",
+    title: "100 % Santé : comprendre les paniers optique, dentaire et audio",
+    href: "/guides-conseils/mutuelle/100-sante-optique-dentaire-audio",
     category: "Mutuelle Santé",
-    readingTime: "6–9 min",
+    readingTime: "6 min",
     excerpt:
-      "En 2026, le dispositif 100% Santé (Reste à Charge Zéro) permet d’obtenir certains équipements optiques et dentaires intégralement remboursés… à condition d’avoir un contrat responsable.",
+      "Comprenez les équipements concernés par le 100 % Santé, les conditions de prise en charge et les points à vérifier avant de choisir vos lunettes, prothèses dentaires ou aides auditives.",
     bullets: [
-      "Optique : montures Classe A + verres (anti-reflets, amincis) = 0€.",
-      "Dentaire : paniers 100% Santé / tarifs maîtrisés / tarifs libres (implants).",
-      "Pour ne rien payer : devis normalisé + tiers payant + contrat responsable.",
-      "Comparer votre mutuelle pour mieux couvrir les options (Classe B / dépassements).",
+      "Les équipements concernés et les conditions de prise en charge.",
+      "La différence entre un équipement du panier et une option hors panier.",
+      "Les garanties à examiner dans votre contrat complémentaire santé.",
     ],
-    ctaLabel: "Lire le guide 100% Santé 2026",
+    ctaLabel: "Lire le guide 100 % Santé",
+  },
+  {
+    title: "Quelle mutuelle dentaire choisir pour ses soins ?",
+    href: "/guides-conseils/mutuelle/mutuelle-dentaire-choisir",
+    category: "Dentaire",
+    readingTime: "5 min",
+    excerpt:
+      "Comparez les remboursements des soins courants, prothèses et orthodontie, ainsi que les plafonds et conditions du contrat.",
+    bullets: [
+      "Distinguer les garanties selon le type de soin.",
+      "Lire les plafonds et les délais de carence.",
+      "Comparer le devis du praticien avec le tableau de garanties.",
+    ],
+    ctaLabel: "Choisir une mutuelle dentaire",
+  },
+  {
+    title: "Quelle mutuelle optique rembourse le mieux les lunettes ?",
+    href: "/guides-conseils/mutuelle/mutuelle-optique-remboursement",
+    category: "Optique",
+    readingTime: "5 min",
+    excerpt:
+      "Forfaits lunettes, lentilles, renouvellement et 100 % Santé : les éléments à vérifier pour comparer les contrats.",
+    bullets: [
+      "Comparer les forfaits avec un devis opticien.",
+      "Vérifier les fréquences et plafonds de remboursement.",
+      "Comprendre les équipements inclus dans le panier 100 % Santé.",
+    ],
+    ctaLabel: "Comparer les garanties optiques",
+  },
+  {
+    title: "Quelle mutuelle santé choisir quand on est senior ?",
+    href: "/guides-conseils/mutuelle/mutuelle-senior-comment-choisir",
+    category: "Senior & retraite",
+    readingTime: "6 min",
+    excerpt:
+      "Priorisez vos besoins en hospitalisation, optique, dentaire et audition, puis comparez plafonds, conditions et coût.",
+    bullets: [
+      "Évaluer les dépenses de santé prévisibles.",
+      "Comparer les garanties sans se limiter au tarif.",
+      "Examiner les options lors du départ à la retraite.",
+    ],
+    ctaLabel: "Lire le guide mutuelle senior",
+  },
+  {
+    title: "Comment trouver une mutuelle famille adaptée à son budget ?",
+    href: "/guides-conseils/mutuelle/mutuelle-famille-pas-chere",
+    category: "Famille",
+    readingTime: "5 min",
+    excerpt:
+      "Comparez les garanties et le coût total pour les besoins des parents et des enfants, dont l’optique, le dentaire et l’orthodontie.",
+    bullets: [
+      "Évaluer séparément les besoins de chaque assuré.",
+      "Contrôler plafonds, orthodontie et conditions d’affiliation.",
+      "Comparer le coût annuel au reste à charge attendu.",
+    ],
+    ctaLabel: "Lire le guide mutuelle famille",
+  },
+  {
+    title: "Quelle mutuelle choisir quand on est indépendant ou TNS ?",
+    href: "/guides-conseils/mutuelle/mutuelle-independant-tns",
+    category: "Indépendants",
+    readingTime: "5 min",
+    excerpt:
+      "Les critères de garanties, de budget et de couverture familiale, ainsi que les points fiscaux à vérifier pour le dispositif Madelin.",
+    bullets: [
+      "Comparer la couverture avec vos dépenses de santé.",
+      "Distinguer complémentaire santé et prévoyance.",
+      "Faire vérifier les conditions fiscales selon votre statut.",
+    ],
+    ctaLabel: "Lire le guide mutuelle TNS",
   },
 ];
 
@@ -111,7 +180,7 @@ export default function GuidesConeilsMutuelle() {
                     items={[
                       { href: BLOGS[0].href, label: "Guide 100% Santé 2026" },
                       { href: "/comparateur-mutuelle-sante", label: "Comparer ma mutuelle santé" },
-                      { href: "/mutuelle-dentaire", label: "Mutuelle Dentaire" },
+                      { href: "/mutuelle-sante/mutuelle-dentaire", label: "Mutuelle Dentaire" },
                     ]}
                   />
                 </div>

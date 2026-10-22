@@ -798,7 +798,7 @@ export default function ResiliationMutuellePage() {
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 sm:mb-12">
-                    <PrimaryButton href="/comparateur-mutuelle">Comparer les mutuelles santé</PrimaryButton>
+                    <PrimaryButton href="/comparateur-mutuelle-sante">Comparer les mutuelles santé</PrimaryButton>
 
                     <div className="flex items-center gap-3 text-blue-100">
                       <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20 flex items-center justify-center ring-1 ring-white/10">

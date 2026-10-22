@@ -76,54 +76,54 @@ const NavbarA: React.FC = () => {
       MutuelleSanté: {
         title: "Mutuelle",
         items: [
-          { label: "Comparateur mutuelle", link: "/profil/senior", icon: HiOutlineStar },
-          { label: "Senior", link: "/profil/senior", icon: HiOutlineStar },
-          { label: "Retraité", link: "/profil/senior", icon: GiFishingPole },
-          { label: "Famille", link: "/profil/famille", icon: HiOutlineUsers },
-          { label: "Indépendant et TNS", link: "/profil/tns", icon: HiOutlineShieldCheck },
-          { label: "Sans emploi", link: "/profil/sans-emploi", icon: HiOutlineHeart },
-          { label: "Fonctionnaire", link: "/profil/fonctionnaire", icon: HiOutlineShieldCheck },
-          { label: "Étudiant", link: "/profil/etudiant", icon: HiOutlineStar },
-          { label: "Hospitalisation", link: "/hospitalisation", icon: MdLocalHospital },
-          { label: "Dentaire", link: "/dentaire", icon: HiOutlineHeart },
-          { label: "Optique", link: "/optique", icon: MdVisibility },
-          { label: "Changer de mutuelle", link: "/changer-mutuelle", icon: MdCompare },
-          { label: "Résilier sa mutuelle", link: "/resiliation", icon: HiOutlineShieldCheck },
-          { label: "Mutuelle pas chère", link: "/mutuelle-pas-cher", icon: HiOutlineStar },
+          { label: "Comparateur mutuelle", link: "/comparateur-mutuelle-sante", icon: HiOutlineStar },
+          { label: "Senior", link: "/mutuelle-sante/mutuelle-senior", icon: HiOutlineStar },
+          { label: "Retraité", link: "/mutuelle-sante/mutuelle-retraite", icon: GiFishingPole },
+          { label: "Famille", link: "/mutuelle-sante/mutuelle-famille", icon: HiOutlineUsers },
+          { label: "Indépendant et TNS", link: "/mutuelle-sante/tns-independants-loi-madelin", icon: HiOutlineShieldCheck },
+          { label: "Sans emploi", link: "/comparateur-mutuelle-sante", icon: HiOutlineHeart },
+          { label: "Fonctionnaire", link: "/comparateur-mutuelle-sante", icon: HiOutlineShieldCheck },
+          { label: "Étudiant", link: "/comparateur-mutuelle-sante", icon: HiOutlineStar },
+          { label: "Hospitalisation", link: "/mutuelle-sante/mutuelle-hospitalisation", icon: MdLocalHospital },
+          { label: "Dentaire", link: "/mutuelle-sante/mutuelle-dentaire", icon: HiOutlineHeart },
+          { label: "Optique", link: "/mutuelle-sante/mutuelle-optique", icon: MdVisibility },
+          { label: "Changer de mutuelle", link: "/mutuelle-sante/changer-mutuelle", icon: MdCompare },
+          { label: "Résilier sa mutuelle", link: "/mutuelle-sante/resiliation-mutuelle", icon: HiOutlineShieldCheck },
+          { label: "Mutuelle pas chère", link: "/mutuelle-sante/mutuelle-pas-chere", icon: HiOutlineStar },
         ],
       },
       besoins: {
         title: "Assurance",
         items: [
-          { label: "Comparateur Assurance", link: "/InsuranceComparison", icon: MdHealthAndSafety },
-          { label: "Assurance Vie", link: "/optique", icon: MdVisibility },
-          { label: "Assurance Obsèques", link: "/dentaire", icon: MdLocalHospital },
-          { label: "Assurance Prévoyance", link: "/orthodontie", icon: HiOutlineHeart },
-          { label: "Assurance Habitation", link: "/expatries", icon: HiOutlineUsers },
-          { label: "Assurance Auto", link: "/dentaire", icon: MdLocalHospital },
-          { label: "Assurance Accident de la Vie (AAV)", link: "/orthodontie", icon: HiOutlineHeart },
-          { label: "Assurance Prêt Immobilier", link: "/expatries", icon: HiOutlineUsers },
+          { label: "Guides assurance", link: "/guides-conseils/assurance", icon: MdHealthAndSafety },
+          { label: "Assurance Vie", link: "/guides-conseils/assurance", icon: MdVisibility },
+          { label: "Assurance Obsèques", link: "/guides-conseils/assurance", icon: MdLocalHospital },
+          { label: "Assurance Prévoyance", link: "/guides-conseils/assurance", icon: HiOutlineHeart },
+          { label: "Assurance Habitation", link: "/guides-conseils/assurance", icon: HiOutlineUsers },
+          { label: "Assurance Auto", link: "/guides-conseils/assurance", icon: MdLocalHospital },
+          { label: "Assurance Accident de la Vie (AAV)", link: "/guides-conseils/assurance", icon: HiOutlineHeart },
+          { label: "Assurance Prêt Immobilier", link: "/guides-conseils/assurance", icon: HiOutlineUsers },
         ],
       },
        ÉpargneRetraite: {
         title: "Épargne & Retraite",
         items: [
-          { label: "Comparateur Retraite", link: "/InsuranceComparison", icon: MdHealthAndSafety },
-          { label: "Plan Épargne Retraite (PER)", link: "/optique", icon: MdVisibility },
-          { label: "Épargne Senior", link: "/dentaire", icon: MdLocalHospital },
-          { label: "Préparer sa Retraite", link: "/orthodontie", icon: HiOutlineHeart },
-          { label: "Conseils & Avantages Fiscaux", link: "/expatries", icon: HiOutlineUsers },
-          { label: "Simulateur Retraite", link: "/dentaire", icon: MdLocalHospital },
+          { label: "Comparateur Retraite", link: "/epargne-retraite/comparateur-retraite", icon: MdHealthAndSafety },
+          { label: "Plan Épargne Retraite (PER)", link: "/epargne-retraite/plan-epargne-retraite-per", icon: MdVisibility },
+          { label: "Épargne Senior", link: "/epargne-retraite/epargne-senior", icon: MdLocalHospital },
+          { label: "Préparer sa Retraite", link: "/epargne-retraite/preparer-sa-retraite", icon: HiOutlineHeart },
+          { label: "Conseils & Avantages Fiscaux", link: "/epargne-retraite/conseils-avantages-fiscaux", icon: HiOutlineUsers },
+          { label: "Simulateur Retraite", link: "/epargne-retraite/simulateur-retraite", icon: MdLocalHospital },
 
         ],
       },
              GuidesConseils: {
         title: "Conseils",
         items: [
-          { label: "Mutuelle", link: "/", icon: MdHealthAndSafety },
-          { label: "Assurance", link: "/", icon: MdVisibility },
-          { label: "Retraite", link: "/", icon: MdLocalHospital },
-          { label: "Guides pratiques", link: "/", icon: HiOutlineHeart },
+          { label: "Mutuelle", link: "/guides-conseils/mutuelle", icon: MdHealthAndSafety },
+          { label: "Assurance", link: "/guides-conseils/assurance", icon: MdVisibility },
+          { label: "Retraite", link: "/guides-conseils/retraite", icon: MdLocalHospital },
+          { label: "Guides pratiques", link: "/guides-conseils/guides-pratiques", icon: HiOutlineHeart },
 
 
         ],
@@ -387,12 +387,11 @@ const NavbarA: React.FC = () => {
               </Link>
             </motion.div>
 
-            {/* Bouton de connexion optionnel */}
             <Link
-              href="/login"
+              href="/Contact"
               className="hidden sm:inline-flex items-center px-4 py-2.5 rounded-lg border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm"
             >
-              Connexion
+              Contact
             </Link>
           </div>
 
@@ -474,11 +473,11 @@ const NavbarA: React.FC = () => {
                 </Link>
 
                 <Link
-                  href="/login"
+                  href="/Contact"
                   onClick={closeMobileMenu}
                   className="w-full py-3 px-4 text-center rounded-xl border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm sm:text-base"
                 >
-                  Connexion
+                  Contact
                 </Link>
               </div>
             </div>

@@ -7,12 +7,20 @@ type SeoMetadataOptions = {
   description: string;
   path: string;
   keywords?: string[];
+  image?: {
+    url: string;
+    alt: string;
+  };
 };
 
 export function createSeoMetadata({
   title,
   description,
   path,
+  image = {
+    url: `${SITE_URL}/images/comparateur-mutuelle.jpg`,
+    alt: "Comparateur de mutuelle santé",
+  },
   keywords = [
     "mutuelle santé",
     "comparateur mutuelle santé",
@@ -51,8 +59,8 @@ export function createSeoMetadata({
       type: "website",
       images: [
         {
-          url: `${SITE_URL}/images/comparateur-mutuelle.jpg`,
-          alt: "Comparateur de mutuelle santé",
+          url: image.url,
+          alt: image.alt,
         },
       ],
     },

@@ -1,37 +1,28 @@
 import MutuelleTnsIndependants from "@/Components/Dropdown/MutuelleTnsIndependants";
-import type { Metadata } from "next";
+import { createSeoMetadata } from "@/lib/seo";
 
-
-export const metadata: Metadata = {
-  title: "Mutuelle TNS et Indépendants : Comparatif Loi Madelin",
-  description:
-    "Comparez les complémentaires santé pour travailleurs indépendants et découvrez les informations sur la loi Madelin.",
-  keywords: [
-    "Mutuelle TNS",
-    "Assurance santé indépendant",
-    "Loi Madelin",
-    "Mutuelle artisan",
-    "Comparateur mutuelle pro",
-    "Déduction fiscale santé",
-  ],
-  openGraph: {
-    title: "Mutuelle TNS : Moins d'impôts, meilleure santé !",
+export const metadata = {
+  ...createSeoMetadata({
+    title: "Mutuelle TNS et indépendants : comparez les garanties",
     description:
-      "Artisans, Libéraux : Découvrez comment la Loi Madelin finance votre couverture santé. Comparez les offres 2026.",
-    url: "https://www.lamutuelledefrance.fr/mutuelle-sante/tns-independants-loi-madelin",
-    siteName: "La Mutuelle de France",
-    images: [
-      {
-        url: "https://www.lamutuelledefrance.fr/images/tns-assistance-pro.jpeg",
-        alt: "Accompagnement des travailleurs indépendants",
-      },
+      "Comparez les complémentaires santé pour travailleurs non salariés, indépendants et professions libérales. Comprenez les critères de choix et les règles fiscales liées au dispositif Madelin.",
+    path: "/mutuelle-sante/tns-independants-loi-madelin",
+    keywords: [
+      "mutuelle TNS",
+      "mutuelle indépendant",
+      "complémentaire santé travailleur non salarié",
+      "mutuelle profession libérale",
+      "mutuelle artisan",
+      "contrat santé loi Madelin",
+      "fiscalité mutuelle TNS",
+      "comparateur mutuelle indépendant",
+      "devis mutuelle TNS",
     ],
-    locale: "fr_FR",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://www.lamutuelledefrance.fr/mutuelle-sante/tns-independants-loi-madelin",
-  },
+    image: {
+      url: "https://www.lamutuelledefrance.fr/images/tns-assistance-pro.jpeg",
+      alt: "Accompagnement des travailleurs indépendants",
+    },
+  }),
 };
 
 export default function Page() {

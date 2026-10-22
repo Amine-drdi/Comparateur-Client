@@ -90,7 +90,7 @@ export default function PlanEpargneRetraitePER() {
                 </div>
 
                 <div className="mt-6">
-                  <InlineLinks items={[{ href: "/epargne-retraite/comparateur-retraite", label: "Comparateur Retraite" }, { href: "/assurance-vie", label: "Assurance Vie" }]} />
+                  <InlineLinks items={[{ href: "/epargne-retraite/comparateur-retraite", label: "Comparateur Retraite" }, { href: "/epargne-retraite/preparer-sa-retraite", label: "Préparer sa retraite" }]} />
                 </div>
               </div>
 

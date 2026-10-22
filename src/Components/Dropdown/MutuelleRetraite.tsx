@@ -546,7 +546,7 @@ export default function MutuelleRetraitePage() {
                   <div className="relative md:pl-0 pl-8">
                     <StepCard step={2} title="Comparer les devis">
                       <p>Grâce à notre <strong className="text-blue-600">comparateur de mutuelle</strong>, vous obtenez rapidement des <strong>devis adaptés à votre situation</strong>.</p>
-                      <Link href="/comparateur-mutuelle" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold text-sm mt-3">
+                      <Link href="/comparateur-mutuelle-sante" className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold text-sm mt-3">
                         Utiliser le comparateur →
                       </Link>
                     </StepCard>
@@ -671,7 +671,7 @@ export default function MutuelleRetraitePage() {
                   </li>
                 </ul>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                  <PrimaryButton href="/resiliation-mutuelle">En savoir plus sur la résiliation</PrimaryButton>
+                  <PrimaryButton href="/mutuelle-sante/resiliation-mutuelle">En savoir plus sur la résiliation</PrimaryButton>
                   <SecondaryButton href="tel:0188812108">
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.5-5.2-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z" />
@@ -762,7 +762,7 @@ export default function MutuelleRetraitePage() {
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 sm:mb-12">
-                    <PrimaryButton href="/comparateur-mutuelle">Comparer les mutuelles retraité</PrimaryButton>
+                    <PrimaryButton href="/comparateur-mutuelle-sante">Comparer les mutuelles retraité</PrimaryButton>
 
                     <div className="flex items-center gap-3 text-blue-100">
                       <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20 flex items-center justify-center ring-1 ring-white/10">

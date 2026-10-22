@@ -36,30 +36,30 @@ const images = {
 
 const BLOGS: BlogCard[] = [
   {
-    title: "Assurance Emprunteur : Comment économiser 15 000 € grâce à la Loi Lemoine ?",
-    href: "/guides-conseils/assurance-emprunteur/economiser-15000-euros-loi-lemoine",
+    title: "Changer d’assurance emprunteur avec la loi Lemoine : mode d’emploi",
+    href: "/guides-conseils/assurance/changer-assurance-emprunteur-loi-lemoine",
     category: "Assurance Emprunteur",
     readingTime: "6–8 min",
     excerpt:
-      "Depuis la Loi Lemoine (2022), vous pouvez changer d’assurance de prêt à tout moment, sans frais, et réduire fortement le coût total du crédit.",
+      "Comprenez les étapes d’une demande de changement et vérifiez l’équivalence des garanties exigées par la banque avant de comparer les tarifs.",
     bullets: [
-      "Résiliation à tout moment (sans date anniversaire).",
-      "Questionnaire de santé supprimé sous conditions.",
-      "Mode d’emploi simple en 3 étapes (comparaison, équivalence, envoi banque).",
+      "Comparer les garanties avant le tarif.",
+      "Transmettre la demande de substitution à la banque.",
+      "Vérifier les conditions et la date de prise d’effet.",
     ],
     ctaLabel: "Lire le guide Loi Lemoine",
   },
   {
-    title: "Assurance Auto & Habitation : Jeune Conducteur, Malus, Sinistres… être bien protégé sans se ruiner",
-    href: "/guides-conseils/assurance-auto-habitation/guide-complet",
+    title: "Changer d’assurance auto ou habitation : démarches et points de vigilance",
+    href: "/guides-conseils/assurance/guide-assurance-auto-habitation-changement",
     category: "Auto & Habitation",
     readingTime: "7–10 min",
     excerpt:
-      "Surprime jeune conducteur, malus/résiliation, Loi Hamon, et gestion des dégâts des eaux : les leviers concrets pour payer moins et éviter les pièges.",
+      "Les critères à comparer et les démarches à vérifier pour changer de contrat d’assurance auto ou habitation sans négliger les garanties.",
     bullets: [
-      "Réduire la surprime : AAC, conducteur secondaire, véhicule modeste.",
-      "Solutions malussés/résilies : courtier spécialisé, transparence AGIRA.",
-      "Loi Hamon : changement gratuit après 1 an + délégation de résiliation.",
+      "Comparer les garanties, franchises et exclusions.",
+      "Vérifier la date de résiliation et les règles applicables.",
+      "Organiser la prise d’effet et conserver les justificatifs.",
     ],
     ctaLabel: "Lire le guide Auto & Habitation",
   },
@@ -124,7 +124,7 @@ export default function GuidesConseilsAssurance() {
                     items={[
                       { href: BLOGS[0].href, label: "Assurance Emprunteur (Loi Lemoine)" },
                       { href: BLOGS[1].href, label: "Auto & Habitation (Loi Hamon)" },
-                      { href: "/comparateur-assurance", label: "Comparer mes assurances" },
+                      { href: "/guides-conseils/assurance", label: "Voir tous les guides assurance" },
                     ]}
                   />
                 </div>
