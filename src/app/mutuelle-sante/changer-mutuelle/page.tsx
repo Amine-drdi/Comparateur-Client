@@ -3,9 +3,9 @@ import ChangerMutuellePage from "@/Components/Dropdown/ChangerMutuelle";
 import { createSeoMetadata } from "@/lib/seo";
 
 export const metadata = createSeoMetadata({
-  title: "Changer de mutuelle santé : démarches et comparaison",
+  title: "Changer de mutuelle : démarches et devis",
   description:
-    "Découvrez quand et comment changer de mutuelle santé, les démarches de résiliation et les points à vérifier avant de souscrire. Comparez les offres avec un devis gratuit et sans engagement.",
+    "Quand et comment changer de mutuelle santé ? Démarches de résiliation, points à vérifier avant de souscrire et devis gratuit sans engagement.",
   path: "/mutuelle-sante/changer-mutuelle",
   keywords: [
     "changer de mutuelle santé",

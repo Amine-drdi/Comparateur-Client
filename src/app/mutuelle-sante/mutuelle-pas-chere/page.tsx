@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import MutuellePasCherePage from "@/Components/Dropdown/MutuellePasChere";
 
 export const metadata: Metadata = {
-  title: "Mutuelle pas chère : comparez le meilleur tarif santé | La Mutuelle de France",
+  title: "Mutuelle pas chère : comparez les tarifs",
   description:
-    "Trouvez une mutuelle santé pas chère tout en gardant une bonne couverture. Comparez les garanties, les tarifs et les offres adaptées à votre budget. Devis gratuit.",
+    "Trouvez une mutuelle santé pas chère tout en gardant une bonne couverture. Comparez les garanties et les tarifs. Devis gratuit.",
   keywords: [
     "mutuelle pas chère",
     "meilleure mutuelle pas chère",
@@ -30,6 +30,12 @@ export const metadata: Metadata = {
     siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: "https://www.lamutuelledefrance.fr/images/comparateur-mutuelle.jpg",
+        alt: "Comparateur de mutuelle santé",
+      },
+    ],
   },
   robots: {
     index: true,

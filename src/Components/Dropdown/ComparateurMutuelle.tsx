@@ -1,45 +1,12 @@
 "use client";
 import React from "react";
-import type { Metadata } from "next";
 import Script from "next/script";
 import Link from "next/link";
 import Image from "next/image";
-import Avatar from "../../../public/Image/logo2.png";
+import Avatar from "../../../public/Image/logo2.webp";
 import ComparateurMutuelleProfiles from "@/Components/Dropdown/ComparateurMutuelleProfiles.client";
 import NavbarA from "../Home/NavBar";
 import Footer from "../Home/Footer";
-
-export const metadata: Metadata = {
-  title: "Comparateur Mutuelle Santé : Votre Devis Gratuit en 2 min",
-  description:
-    "Économisez jusqu'à 40% sur votre assurance santé. Comparez gratuitement les meilleures mutuelles pour seniors, familles et retraités. Devis immédiat et sans engagement.",
-  keywords: [
-    "comparateur mutuelle santé",
-    "La Mutuelle De France gratuit",
-    "comparatif assurance santé",
-    "meilleure mutuelle",
-    "mutuelle pas chère",
-    "comparateur mutuelle senior",
-    "changer de mutuelle",
-    "La Mutuelle De France en ligne",
-  ],
-  alternates: {
-    canonical: "https://www.lamutuelledefrance.fr/mutuelle-sante/comparateur-mutuelle",
-  },
-  openGraph: {
-    title: "Comparateur Mutuelle : Trouvez la Meilleure Offre en 2 min",
-    description:
-      "Ne payez plus trop cher ! Utilisez notre comparateur 100% gratuit pour trouver une couverture santé adaptée à vos besoins (Optique, Dentaire, Hospitalisation).",
-    url: "https://www.lamutuelledefrance.fr/mutuelle-sante/comparateur-mutuelle",
-    siteName: "La Mutuelle De France",
-    locale: "fr_FR",
-    type: "website",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -171,8 +138,8 @@ const images = {
   family: "/images/Devis-mutuelle-sante.jpg",
   senior: "/images/mutuelle-senior.jpg",
   savings: "/images/économisez-argent-mutuelle.jpg",
-  guarantee: "/images/garantie.jpg",
-  advisor: "/images/conseiller-mutuelle.jpg",
+  guarantee: "/images/garantie.webp",
+  advisor: "/images/conseiller-mutuelle.webp",
 };
 
 /* ------------------------------ UI elements ------------------------------ */
@@ -696,7 +663,7 @@ function HowItWorksSection() {
             <StepCard step={3} title="Choisissez en toute sérénité">
               <p>Notre conseiller vous accompagne dans votre choix et les démarches.</p>
               <p className="mt-3 sm:mt-4">
-                <PhoneLink phone="06 09 99 98 02" />
+                <PhoneLink phone="06 01 02 03 04" />
               </p>
             </StepCard>
           </div>

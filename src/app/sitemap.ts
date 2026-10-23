@@ -2,9 +2,11 @@ import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/seo";
 import { GUIDE_ARTICLES } from "@/lib/guideArticles";
 
+const STATIC_LASTMOD = "2026-10-22";
+
 const publicRoutes = [
   "/",
-  "/Contact",
+  "/contact",
   "/comparateur-mutuelle-sante",
   "/mutuelle-sante/comparateur-mutuelle",
   "/mutuelle-sante/changer-mutuelle",
@@ -30,9 +32,15 @@ const publicRoutes = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [...publicRoutes, ...GUIDE_ARTICLES.map(
-    ({ category, slug }) => `/guides-conseils/${category}/${slug}`,
-  )].map((path) => ({
+  const staticEntries: MetadataRoute.Sitemap = publicRoutes.map((path) => ({
     url: new URL(path, SITE_URL).toString(),
+    lastModified: STATIC_LASTMOD,
   }));
+  const articleEntries: MetadataRoute.Sitemap = GUIDE_ARTICLES.map(
+    ({ category, slug, updatedAt }) => ({
+      url: new URL(`/guides-conseils/${category}/${slug}`, SITE_URL).toString(),
+      lastModified: updatedAt,
+    }),
+  );
+  return [...staticEntries, ...articleEntries];
 }

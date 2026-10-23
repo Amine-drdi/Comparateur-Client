@@ -2,7 +2,7 @@ import ConseilsAvantagesFiscaux from "@/Components/epargne-retraite/ComparateurR
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Conseils Fiscaux : PER et Avantages de l’Épargne Retraite",
+  title: "Conseils fiscaux : PER et épargne retraite",
   description:
     "Comment payer moins d'impôts ? Découvrez nos conseils en défiscalisation : PER, Assurance Vie, Loi Madelin. Audit fiscal et patrimonial gratuit par nos experts.",
   keywords: [

@@ -35,7 +35,7 @@ const faqData: Question[] = [
     ),
   },
   {
-    question: "Comment obtenir un La Mutuelle De France santé gratuit ?",
+    question: "Comment obtenir un devis mutuelle santé gratuit ?",
     answer: (
       <>
         Grâce à notre simulateur, obtenez un devis gratuit et sans engagement en moins de 2 minutes. 
@@ -158,7 +158,7 @@ Par exemple, en juillet 2024, un couple de retraités de 65 ans a réalisé 36�
     ),
   },
   {
-    question: "Comment obtenir un La Mutuelle De France ?",
+    question: "Comment obtenir un devis de mutuelle santé ?",
     answer: (
       <>
         Avec notre simulateur, plus besoin de vous déplacer. En un clic, comparez plusieurs offres adaptées à vos besoins.

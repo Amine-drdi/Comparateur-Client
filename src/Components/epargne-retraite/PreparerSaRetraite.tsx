@@ -85,7 +85,7 @@ export default function PreparerSaRetraite() {
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
                   <PrimaryButton onClick={() => setOpen(true)}>Lancer mon Bilan Retraite</PrimaryButton>
-                  <SecondaryButton href="tel:0188812108">Expert : 06 09 99 98 02</SecondaryButton>
+                  <SecondaryButton href="tel:0188812108">Expert : 06 01 02 03 04</SecondaryButton>
                 </div>
 
                 <div className="mt-6">
@@ -141,7 +141,7 @@ export default function PreparerSaRetraite() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
               <PrimaryButton onClick={() => setOpen(true)}>Obtenir une stratégie adaptée à mon âge</PrimaryButton>
-              <SecondaryButton href="tel:0188812108">Être rappelé : 06 09 99 98 02</SecondaryButton>
+              <SecondaryButton href="tel:0188812108">Être rappelé : 06 01 02 03 04</SecondaryButton>
             </div>
           </section>
 

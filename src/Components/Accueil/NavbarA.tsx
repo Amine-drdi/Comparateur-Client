@@ -130,7 +130,7 @@ const NavbarA: React.FC = () => {
       },
       assureurs: {
         title: "Contact",
-        link: "/Contact",
+        link: "/contact",
         icon: HiOutlineUsers,
       },
     }),
@@ -388,7 +388,7 @@ const NavbarA: React.FC = () => {
             </motion.div>
 
             <Link
-              href="/Contact"
+              href="/contact"
               className="hidden sm:inline-flex items-center px-4 py-2.5 rounded-lg border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm"
             >
               Contact
@@ -473,7 +473,7 @@ const NavbarA: React.FC = () => {
                 </Link>
 
                 <Link
-                  href="/Contact"
+                  href="/contact"
                   onClick={closeMobileMenu}
                   className="w-full py-3 px-4 text-center rounded-xl border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-600 hover:text-white transition-all duration-300 text-sm sm:text-base"
                 >

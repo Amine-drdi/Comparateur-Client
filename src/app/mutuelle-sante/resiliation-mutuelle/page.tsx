@@ -3,9 +3,9 @@ import ResiliationMutuellePage from "@/Components/Dropdown/ResiliationMutuellePa
 import { createSeoMetadata } from "@/lib/seo";
 
 export const metadata = createSeoMetadata({
-  title: "Résiliation mutuelle santé : démarches et délais",
+  title: "Résiliation mutuelle : démarches et délais",
   description:
-    "Comprenez les conditions et les étapes pour résilier une complémentaire santé, notamment après la première année du contrat. Comparez une nouvelle couverture avec un devis gratuit.",
+    "Résiliez votre complémentaire santé : conditions et étapes, notamment après la première année du contrat. Devis pour une nouvelle couverture.",
   path: "/mutuelle-sante/resiliation-mutuelle",
   keywords: [
     "résiliation mutuelle santé",

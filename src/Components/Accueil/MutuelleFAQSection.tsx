@@ -17,7 +17,7 @@ const MutuelleFAQSection = () => {
       ),
     },
     {
-    question: "Comment obtenir un La Mutuelle De France santé gratuit ?",
+    question: "Comment obtenir un devis mutuelle santé gratuit ?",
     answer: (
       <>
         En utilisant notre simulateur, vous obtenez un devis en moins de 2 minutes sans engagement.
@@ -52,6 +52,39 @@ const MutuelleFAQSection = () => {
         <strong>Salariés du privé :</strong> la mutuelle d’entreprise est obligatoire.
         <br />
         <strong>Indépendants, étudiants, retraités :</strong> ce n’est pas obligatoire, mais fortement recommandé.
+      </>
+    ),
+  },
+  {
+    question: "Quelle mutuelle senior choisir pour réduire son reste à charge ?",
+    answer: (
+      <>
+        Une bonne mutuelle senior doit offrir des remboursements renforcés sur le dentaire,
+        l’optique, l’audiologie et l’hospitalisation, sans questionnaire médical.
+        <br />
+        <em className="text-sm text-gray-600">
+          Notre comparateur sélectionne en 2 minutes les contrats les plus adaptés aux plus de 55 ans.
+        </em>
+      </>
+    ),
+  },
+  {
+    question: "Comment trouver une mutuelle famille pas chère ?",
+    answer: (
+      <>
+        Il faut comparer les garanties essentielles pour un foyer : orthodontie, optique enfant,
+        soins courants et hospitalisation. Mettre les assureurs en concurrence permet
+        d’économiser jusqu’à 36% sur une mutuelle famille.
+      </>
+    ),
+  },
+  {
+    question: "Comment payer sa mutuelle moins cher ?",
+    answer: (
+      <>
+        Adaptez vos garanties à vos besoins réels, privilégiez les contrats responsables
+        et comparez les offres de plus de 30 assureurs avec notre comparateur :
+        le devis est gratuit et sans engagement.
       </>
     ),
   }
@@ -91,7 +124,7 @@ const MutuelleFAQSection = () => {
             <p className="text-gray-50">
             Vous n’avez pas trouvé la réponse que vous cherchez ?{' '}
               <a
-                href="/Contact"
+                href="/contact"
                 title="Contact support"
                 className="text-yellow-300 transition-all duration-200 hover:text-yellow-400 focus:text-yellow-400 hover:underline"
               >

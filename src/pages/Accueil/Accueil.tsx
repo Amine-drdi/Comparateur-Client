@@ -16,6 +16,7 @@ import ComparateurMutuelle from "../../Components/Accueil/ComparateurMutuelle";
 import EtapesEtComparatif from "../../Components/Accueil/EtapesEtComparatif";
 import ComprendreMonDevis from "../../Components/Accueil/ComprendreMonDevis";
 import FacteursPrixMutuelle from "../../Components/Accueil/FacteursPrixMutuelle";
+import MutuellesParProfil from "../../Components/Accueil/MutuellesParProfil";
 import AvisEtDevis from "../../Components/Accueil/AvisEtDevis";
 import MutuelleFAQSection from "../../Components/Accueil/MutuelleFAQSection";
 import HealthInsuranceMenuWithNavbar from "../../Components/Accueil/InsuranceAndMutualHealth";
@@ -27,6 +28,7 @@ export default function Accueil() {
     <div className="overflow-x-hidden">
       <Navbar/>
       <section className="relative bg-gradient-to-br from-[#f5f6ff] via-[#f0f4ff] to-[#e8f2ff] md:pt-24 px-4 sm:px-6 md:px-12 lg:px-24">
+        <h1 className="sr-only">Comparateur de mutuelles santé : devis gratuit et sans engagement</h1>
         {/* ================= MOBILE ================= */}
         <div className="block md:hidden">
           <div className="text-center mt-32 mb-6 pt-6">
@@ -187,6 +189,7 @@ export default function Accueil() {
         <EtapesEtComparatif />
         <ComprendreMonDevis />
         <FacteursPrixMutuelle />
+        <MutuellesParProfil />
         <AvisEtDevis />
         <MutuelleFAQSection />
       </div>

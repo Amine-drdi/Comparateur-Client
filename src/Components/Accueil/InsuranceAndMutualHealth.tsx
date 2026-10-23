@@ -67,8 +67,8 @@ const HealthInsuranceMenuWithNavbar = () => {
           <div className="bg-blue-50 rounded p-4 mb-4">
             <div className="flex items-center gap-2 mb-4">
             <div className="mb-4 flex justify-center">
-              <img src="https://www.argusdelassurance.com/mediatheque/2/3/6/000163632_896x598_c.jpg" 
-              alt="Hervé" 
+              <img src="/images/conseiller-mutuelle.webp"
+              alt="Conseillère en mutuelle santé au téléphone, prête à vous aider"
               className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full"
               />
               </div>
@@ -89,8 +89,8 @@ const HealthInsuranceMenuWithNavbar = () => {
           <div className="bg-blue-50 rounded p-4">
             <div className="flex items-center gap-2 mb-4">
             <div className="mb-4 flex justify-center">
-              <img src="https://www.flexassur.fr/design/medias/img-mutuelle-sante-m.jpg"
-                alt="Hervé" 
+              <img src="/images/devis-gratuit.webp"
+                alt="Couple de seniors consultant un devis de mutuelle santé en ligne"
               className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-full"
               />
               </div>

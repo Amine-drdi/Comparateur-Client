@@ -76,7 +76,7 @@ export default function ConseilsAvantagesFiscaux() {
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div>
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-blue-700 mt-32">
-                  Conseils & Avantages Fiscaux : Transformez vos Impôts en Patrimoine
+                  Comparateur retraite : PER, assurance vie et épargne
                 </h1>
                 <p className="text-base sm:text-lg text-slate-700 leading-relaxed mt-4">
                   Utilisez les dispositifs légaux (PER, Assurance Vie, Madelin) pour réduire l’impôt et construire un capital.
@@ -85,7 +85,7 @@ export default function ConseilsAvantagesFiscaux() {
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
                   <PrimaryButton onClick={() => setOpen(true)}>Lancer mon Audit Fiscal</PrimaryButton>
-                  <SecondaryButton href="tel:0188812108">Expert Fiscalité : 06 09 99 98 02</SecondaryButton>
+                  <SecondaryButton href="tel:0188812108">Expert Fiscalité : 06 01 02 03 04</SecondaryButton>
                 </div>
 
                 <div className="mt-6">
@@ -155,7 +155,7 @@ export default function ConseilsAvantagesFiscaux() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
               <PrimaryButton onClick={() => setOpen(true)}>Simuler mon économie d’impôt</PrimaryButton>
-              <SecondaryButton href="tel:0188812108">Parler à un Expert : 06 09 99 98 02</SecondaryButton>
+              <SecondaryButton href="tel:0188812108">Parler à un Expert : 06 01 02 03 04</SecondaryButton>
             </div>
           </section>
 

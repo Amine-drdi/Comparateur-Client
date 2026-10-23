@@ -3,9 +3,9 @@ import { createSeoMetadata } from "@/lib/seo";
 
 export const metadata = {
   ...createSeoMetadata({
-    title: "Mutuelle TNS et indépendants : comparez les garanties",
+    title: "Mutuelle TNS : comparez les garanties",
     description:
-      "Comparez les complémentaires santé pour travailleurs non salariés, indépendants et professions libérales. Comprenez les critères de choix et les règles fiscales liées au dispositif Madelin.",
+      "Complémentaires santé pour TNS, indépendants et professions libérales : critères de choix et règles fiscales du dispositif Madelin.",
     path: "/mutuelle-sante/tns-independants-loi-madelin",
     keywords: [
       "mutuelle TNS",

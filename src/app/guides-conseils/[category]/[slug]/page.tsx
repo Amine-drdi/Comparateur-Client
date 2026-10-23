@@ -37,6 +37,12 @@ export async function generateMetadata({ params }: GuidePageProps): Promise<Meta
       siteName: "La Mutuelle de France",
       locale: "fr_FR",
       type: "article",
+      images: [
+        {
+          url: `${SITE_URL}/images/comparateur-mutuelle.jpg`,
+          alt: "Comparateur de mutuelle santé",
+        },
+      ],
     },
   };
 }
@@ -136,7 +142,7 @@ export default async function GuideArticlePage({ params }: GuidePageProps) {
                 </p>
                 <Link
                   className="mt-4 inline-flex rounded-lg bg-blue-700 px-5 py-3 font-semibold text-white hover:bg-blue-800"
-                  href="/Contact"
+                  href="/contact"
                 >
                   Contacter l’équipe
                 </Link>

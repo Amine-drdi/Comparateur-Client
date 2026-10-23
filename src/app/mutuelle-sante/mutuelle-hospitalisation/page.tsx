@@ -3,9 +3,9 @@ import MutuelleHospitalisationPage from "@/Components/Dropdown/MutuelleHospitali
 import { createSeoMetadata } from "@/lib/seo";
 
 export const metadata = createSeoMetadata({
-  title: "Mutuelle hospitalisation : comparez les garanties et les tarifs",
+  title: "Mutuelle hospitalisation : tarifs comparés",
   description:
-    "Comparez les garanties d’une mutuelle hospitalisation : frais de séjour, forfait journalier, honoraires et chambre particulière. Demandez un devis gratuit et sans engagement.",
+    "Mutuelle hospitalisation : comparez frais de séjour, forfait journalier, honoraires et chambre particulière. Devis gratuit sans engagement.",
   path: "/mutuelle-sante/mutuelle-hospitalisation",
   keywords: [
     "mutuelle hospitalisation",

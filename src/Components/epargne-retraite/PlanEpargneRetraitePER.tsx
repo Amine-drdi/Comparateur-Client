@@ -86,7 +86,7 @@ export default function PlanEpargneRetraitePER() {
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
                   <PrimaryButton onClick={() => setOpen(true)}>Calculer mon économie d’impôt</PrimaryButton>
-                  <SecondaryButton href="tel:0188812108">Expert PER : 06 09 99 98 02</SecondaryButton>
+                  <SecondaryButton href="tel:0188812108">Expert PER : 06 01 02 03 04</SecondaryButton>
                 </div>
 
                 <div className="mt-6">
@@ -134,7 +134,7 @@ export default function PlanEpargneRetraitePER() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
               <PrimaryButton onClick={() => setOpen(true)}>Vérifier mon éligibilité</PrimaryButton>
-              <SecondaryButton href="tel:0188812108">Conseiller : 06 09 99 98 02</SecondaryButton>
+              <SecondaryButton href="tel:0188812108">Conseiller : 06 01 02 03 04</SecondaryButton>
             </div>
           </section>
 

@@ -166,14 +166,14 @@ export default function GuidesConseilsRetraite() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
-                  <SecondaryButton href="tel:0188812108">Parler à un conseiller : 06 09 99 98 02</SecondaryButton>
+                  <SecondaryButton href="tel:0188812108">Parler à un conseiller : 06 01 02 03 04</SecondaryButton>
                   <PrimaryButton onClick={() => setOpen(true)}>Demander un audit patrimonial</PrimaryButton>
                 </div>
 
                 <div className="mt-6">
                   <InlineLinks
                     items={[
-                      { href: "/Contact", label: "Audit patrimonial gratuit" },
+                      { href: "/contact", label: "Audit patrimonial gratuit" },
                       { href: "/epargne-retraite/comparateur-retraite", label: "Comparer nos offres d’épargne" },
                       { href: "/epargne-retraite/preparer-sa-retraite", label: "Préparer sa retraite" },
                     ]}
@@ -280,7 +280,7 @@ export default function GuidesConseilsRetraite() {
                   Assurance Vie (souplesse + transmission).
                 </p>
                 <div className="mt-4 flex flex-col sm:flex-row gap-3">
-                  <SecondaryButton href="/Contact">Demander un audit patrimonial gratuit</SecondaryButton>
+                  <SecondaryButton href="/contact">Demander un audit patrimonial gratuit</SecondaryButton>
                   <PrimaryButton onClick={() => setOpen(true)}>Parler à un expert</PrimaryButton>
                 </div>
               </div>

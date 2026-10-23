@@ -15,7 +15,7 @@ export default function EtapesEtComparatif() {
     {
       icon: <HandCoins className="w-8 h-8 text-blue-600" />,
       title: "Économisez de l'argent",
-      text: "Je demande mes devis en un clic.",
+      text: "Demandez vos devis en un clic.",
     },
   ];
 

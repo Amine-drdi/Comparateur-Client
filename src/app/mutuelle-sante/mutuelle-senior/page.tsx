@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import MutuelleSeniorPage from "@/Components/Dropdown/MutuelleSenior";
 
 export const metadata: Metadata = {
-  title: "Mutuelle senior : comparez les meilleures offres santé | La Mutuelle de France",
+  title: "Mutuelle senior : comparez les offres",
   description:
-    "Trouvez la meilleure mutuelle senior pour votre budget. Comparez les garanties optique, dentaire, hospitalisation et audiologie. Devis gratuit et sans engagement.",
+    "Trouvez la meilleure mutuelle senior pour votre budget. Comparez les garanties optique, dentaire, hospitalisation et audiologie. Devis gratuit.",
   keywords: [
     "mutuelle senior",
     "mutuelle retraité",
@@ -29,6 +29,12 @@ export const metadata: Metadata = {
     siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: "https://www.lamutuelledefrance.fr/images/comparateur-mutuelle.jpg",
+        alt: "Comparateur de mutuelle santé",
+      },
+    ],
   },
   robots: {
     index: true,

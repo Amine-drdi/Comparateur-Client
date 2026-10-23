@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Simulateur Retraite : Estimez votre Pension et votre Épargne",
+  title: "Simulateur retraite : estimez votre pension",
   description:
-    "Calculez le montant de votre future retraite en 2 min. Estimez votre perte de revenus et découvrez combien épargner (PER) pour maintenir votre niveau de vie. Bilan gratuit.",
+    "Calculez votre future retraite en 2 min : pension estimée, perte de revenus et épargne nécessaire (PER) pour garder votre niveau de vie.",
   keywords: [
     "simulateur retraite",
     "calcul retraite gratuit",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.lamutuelledefrance.fr/images/revenue.jpg",
+        url: "https://www.lamutuelledefrance.fr/images/revenue.webp",
         alt: "Simulateur Calcul Retraite Devis Mutuelle",
       },
     ],

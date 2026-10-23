@@ -2,9 +2,9 @@ import EpargneSenior from "@/Components/epargne-retraite/EpargneSenior";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Épargne Senior : Placements et Préparation de la Succession",
+  title: "Épargne senior : placements et succession",
   description:
-    "Sécurisez votre capital et préparez votre succession. Assurance Vie Senior, Rente Viagère et SCPI. Profitez de l'abattement successoral de 152 500€. Bilan gratuit.",
+    "Sécurisez votre capital et préparez votre succession : assurance vie senior, rente viagère, SCPI. Bilan patrimonial gratuit.",
   keywords: [
     "épargne senior",
     "placement senior",

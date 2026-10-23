@@ -86,14 +86,14 @@ export default function EpargneSenior() {
 
                 <div className="flex flex-col sm:flex-row gap-3 mt-6">
                   <PrimaryButton onClick={() => setOpen(true)}>Demander mon étude gratuite</PrimaryButton>
-                  <SecondaryButton href="tel:0188812108">Parler à un Expert : 06 09 99 98 02</SecondaryButton>
+                  <SecondaryButton href="tel:0188812108">Parler à un Expert : 06 01 02 03 04</SecondaryButton>
                 </div>
 
                 <div className="mt-6">
                   <InlineLinks
                     items={[
                       { href: "/epargne-retraite/preparer-sa-retraite", label: "Préparer sa retraite" },
-                      { href: "/Contact", label: "Demander une étude personnalisée" },
+                      { href: "/contact", label: "Demander une étude personnalisée" },
                     ]}
                   />
                 </div>
@@ -152,7 +152,7 @@ export default function EpargneSenior() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
               <PrimaryButton onClick={() => setOpen(true)}>Comparer ces solutions</PrimaryButton>
-              <SecondaryButton href="tel:0188812108">Conseiller : 06 09 99 98 02</SecondaryButton>
+              <SecondaryButton href="tel:0188812108">Conseiller : 06 01 02 03 04</SecondaryButton>
             </div>
           </section>
 

@@ -4,9 +4,9 @@ import MutuelleRetraitePage from "@/Components/Dropdown/MutuelleRetraite";
 import { createSeoMetadata } from "@/lib/seo";
 
 export const metadata = createSeoMetadata({
-  title: "Mutuelle retraite : comparez les offres pour retraités",
+  title: "Mutuelle retraite : comparez les offres",
   description:
-    "À la retraite, comparez les garanties santé selon vos besoins en optique, dentaire, audition et hospitalisation. Découvrez les règles de maintien du contrat et demandez un devis gratuit.",
+    "À la retraite, comparez les garanties santé : optique, dentaire, audition, hospitalisation. Maintien du contrat et devis gratuit.",
   path: "/mutuelle-sante/mutuelle-retraite",
   keywords: [
     "mutuelle retraité",

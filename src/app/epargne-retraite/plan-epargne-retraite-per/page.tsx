@@ -2,9 +2,9 @@ import PlanEpargneRetraitePER from "@/Components/epargne-retraite/PlanEpargneRet
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plan Épargne Retraite (PER) : Comparatif et Simulation Fiscale",
+  title: "Plan épargne retraite (PER) : comparatif",
   description:
-    "Ouvrez un PER Individuel et réduisez vos impôts dès maintenant. Comparatif des meilleurs PER (Frais 0%, Gestion Pilotée). Déblocage anticipé possible pour résidence principale.",
+    "Ouvrez un PER individuel et réduisez vos impôts. Comparatif des meilleurs PER : frais 0 %, gestion pilotée, déblocage anticipé possible.",
   keywords: [
     "plan épargne retraite",
     "PER individuel",

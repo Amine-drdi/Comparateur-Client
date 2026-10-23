@@ -1,6 +1,7 @@
 export type GuideArticle = {
   category: "mutuelle" | "guides-pratiques" | "assurance" | "retraite";
   slug: string;
+  updatedAt: string;
   title: string;
   description: string;
   keywords: string[];
@@ -22,73 +23,9 @@ export type GuideArticle = {
 
 export const GUIDE_ARTICLES: GuideArticle[] = [
   {
-    category: "guides-pratiques",
-    slug: "comment-utiliser-comparateur-mutuelle-sante",
-    title: "Comment comparer les mutuelles santé et choisir la bonne couverture",
-    description:
-      "Un guide pratique pour comparer les garanties, les remboursements, les exclusions et le prix d’une mutuelle santé avant de demander un devis.",
-    keywords: [
-      "comment comparer une mutuelle santé",
-      "guide comparateur mutuelle",
-      "comparatif mutuelle santé",
-      "choisir complémentaire santé",
-    ],
-    introduction:
-      "Comparer une mutuelle ne consiste pas à retenir le tarif le plus bas. Il faut mettre en regard les garanties dont vous avez besoin, leurs plafonds, les exclusions et le coût total du contrat.",
-    sections: [
-      {
-        heading: "Faire le point sur vos dépenses de santé",
-        paragraphs: [
-          "Commencez par vos soins habituels et ceux que vous anticipez : consultations, lunettes, soins dentaires, hospitalisation ou équipements auditifs. Le relevé de remboursements des derniers mois peut aider à estimer vos dépenses réelles.",
-          "Tenez aussi compte des personnes à couvrir, de votre régime obligatoire et de votre budget mensuel. Une garantie élevée sur un poste que vous n’utilisez pas n’est pas toujours pertinente.",
-        ],
-        points: [
-          "Séparez les soins courants des dépenses ponctuelles importantes.",
-          "Vérifiez le dispositif 100 % Santé et les conditions des contrats responsables.",
-          "Prévoyez une marge pour les soins imprévus sans surpayer toutes les garanties.",
-        ],
-      },
-      {
-        heading: "Comparer les garanties au-delà du pourcentage affiché",
-        paragraphs: [
-          "Un remboursement exprimé en pourcentage de la base de remboursement de la Sécurité sociale ne correspond pas nécessairement à un pourcentage de votre facture. Regardez également les forfaits en euros, les plafonds annuels, les délais de carence et les exclusions.",
-          "Pour l’hospitalisation, contrôlez notamment le forfait journalier, les dépassements d’honoraires et la chambre particulière. Pour l’optique et le dentaire, comparez les forfaits et les conditions applicables aux équipements concernés.",
-        ],
-      },
-      {
-        heading: "Lire le tarif et les conditions du contrat",
-        paragraphs: [
-          "Comparez le montant des cotisations pour chaque personne couverte, les éventuelles évolutions de tarif et les services inclus. Avant de souscrire, lisez le tableau de garanties et les conditions générales : ils précisent les limites réelles de prise en charge.",
-          "Demandez un devis personnalisé avec des informations exactes. Il permet de comparer des offres établies sur un profil comparable, sans confondre estimation de prix et garantie contractuelle.",
-        ],
-      },
-    ],
-    faqs: [
-      {
-        question: "Quel est le critère le plus important pour comparer une mutuelle ?",
-        answer:
-          "Il n’y a pas de critère unique : le bon choix dépend de vos soins prévisibles, du reste à charge accepté et de votre budget. Comparez les garanties utiles, les plafonds, les exclusions et le prix ensemble.",
-      },
-      {
-        question: "Un remboursement à 200 % signifie-t-il que tout est remboursé ?",
-        answer:
-          "Non. Le pourcentage s’applique généralement à une base de remboursement définie, et non au montant total de la facture. Les plafonds, forfaits et conditions du contrat peuvent aussi limiter le remboursement.",
-      },
-      {
-        question: "Comment obtenir un devis de mutuelle santé ?",
-        answer:
-          "Renseignez votre situation et les garanties recherchées dans le formulaire de comparaison. Vérifiez ensuite le détail des propositions et les documents contractuels avant toute souscription.",
-      },
-    ],
-    relatedLinks: [
-      { href: "/comparateur-mutuelle-sante", label: "Demander un devis mutuelle gratuit" },
-      { href: "/mutuelle-sante/mutuelle-pas-chere", label: "Comparer les mutuelles à petit budget" },
-      { href: "/mutuelle-sante/mutuelle-dentaire", label: "Comparer les garanties dentaires" },
-    ],
-  },
-  {
     category: "mutuelle",
     slug: "mutuelle-senior-comment-choisir",
+    updatedAt: "2026-09-02",
     title: "Quelle mutuelle santé choisir quand on est senior ?",
     description:
       "Comment choisir une mutuelle senior : comparez les besoins en optique, dentaire, audition, hospitalisation, les plafonds et le coût des garanties.",
@@ -154,6 +91,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
   {
     category: "mutuelle",
     slug: "mutuelle-famille-pas-chere",
+    updatedAt: "2026-09-05",
     title: "Comment trouver une mutuelle famille adaptée à son budget ?",
     description:
       "Les critères pour comparer une mutuelle famille pas chère : cotisation par assuré, soins des enfants, orthodontie, optique et niveaux de garanties.",
@@ -219,6 +157,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
   {
     category: "mutuelle",
     slug: "mutuelle-dentaire-choisir",
+    updatedAt: "2026-09-19",
     title: "Quelle mutuelle dentaire choisir pour ses soins ?",
     description:
       "Guide pour choisir une mutuelle dentaire : soins courants, couronnes, orthodontie, implants, plafonds et dispositif 100 % Santé.",
@@ -280,6 +219,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
   {
     category: "mutuelle",
     slug: "mutuelle-optique-remboursement",
+    updatedAt: "2026-09-26",
     title: "Quelle mutuelle optique rembourse le mieux les lunettes ?",
     description:
       "Comprendre les remboursements optiques et comparer les forfaits lunettes, lentilles, fréquence de renouvellement et conditions du 100 % Santé.",
@@ -341,6 +281,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
   {
     category: "guides-pratiques",
     slug: "changer-mutuelle-sante",
+    updatedAt: "2026-09-12",
     title: "Quand et comment changer de mutuelle santé ?",
     description:
       "Les règles et étapes pour changer de complémentaire santé, comparer un nouveau contrat et organiser la transition sans interruption évitable.",
@@ -401,6 +342,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
   {
     category: "guides-pratiques",
     slug: "resilier-mutuelle-sante",
+    updatedAt: "2026-09-15",
     title: "Comment résilier une mutuelle santé ?",
     description:
       "Guide des démarches de résiliation d’une complémentaire santé : contrat individuel, résiliation après un an, prise d’effet et précautions.",
@@ -461,6 +403,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
   {
     category: "mutuelle",
     slug: "mutuelle-independant-tns",
+    updatedAt: "2026-08-28",
     title: "Quelle mutuelle choisir quand on est indépendant ou TNS ?",
     description:
       "Les critères pour choisir une mutuelle TNS : garanties, budget, couverture de la famille et points fiscaux à vérifier pour le dispositif Madelin.",
@@ -525,6 +468,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
   {
     category: "mutuelle",
     slug: "100-sante-optique-dentaire-audio",
+    updatedAt: "2026-10-08",
     title: "100 % Santé : comprendre les paniers optique, dentaire et audio",
     description:
       "Ce que couvre le dispositif 100 % Santé en optique, dentaire et audiologie, ses conditions et les points à contrôler avant de choisir un équipement.",
@@ -586,6 +530,7 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
   {
     category: "assurance",
     slug: "changer-assurance-emprunteur-loi-lemoine",
+    updatedAt: "2026-08-15",
     title: "Changer d’assurance emprunteur avec la loi Lemoine : mode d’emploi",
     description:
       "Les étapes pour demander le changement d’une assurance emprunteur et vérifier l’équivalence des garanties exigées par la banque.",
@@ -632,12 +577,13 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
     ],
     relatedLinks: [
       { href: "/guides-conseils/assurance", label: "Retour aux guides assurance" },
-      { href: "/Contact", label: "Contacter l’équipe" },
+      { href: "/contact", label: "Contacter l’équipe" },
     ],
   },
   {
     category: "assurance",
     slug: "guide-assurance-auto-habitation-changement",
+    updatedAt: "2026-08-22",
     title: "Changer d’assurance auto ou habitation : démarches et points de vigilance",
     description:
       "Les critères pour comparer une assurance auto ou habitation et les étapes à vérifier lors d’un changement de contrat.",
@@ -686,12 +632,13 @@ export const GUIDE_ARTICLES: GuideArticle[] = [
     ],
     relatedLinks: [
       { href: "/guides-conseils/assurance", label: "Retour aux guides assurance" },
-      { href: "/Contact", label: "Contacter l’équipe" },
+      { href: "/contact", label: "Contacter l’équipe" },
     ],
   },
   {
     category: "retraite",
     slug: "choisir-mutuelle-retraite",
+    updatedAt: "2026-10-20",
     title: "Mutuelle à la retraite : comment choisir et comparer les garanties",
     description:
       "Départ à la retraite : comparez le maintien éventuel de votre couverture collective et les contrats individuels selon les garanties, le coût et vos besoins de santé.",

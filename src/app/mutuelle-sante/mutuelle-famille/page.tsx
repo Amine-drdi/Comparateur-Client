@@ -26,7 +26,7 @@ export const familleSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Mutuelle famille pas chère : comparez les meilleures garanties | La Mutuelle de France",
+  title: "Mutuelle famille pas chère : comparez",
   description:
     "Trouvez la meilleure mutuelle famille pour votre budget. Comparez les garanties optique, dentaire, orthodontie et hospitalisation. Devis gratuit et rapide.",
   keywords: [
@@ -52,6 +52,12 @@ export const metadata: Metadata = {
     siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: "https://www.lamutuelledefrance.fr/images/comparateur-mutuelle.jpg",
+        alt: "Comparateur de mutuelle santé",
+      },
+    ],
   },
   robots: {
     index: true,

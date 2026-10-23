@@ -136,7 +136,7 @@ const NavbarA: React.FC = () => {
       },
       assureurs: {
         title: "Contact",
-        link: "/Contact",
+        link: "/contact",
         icon: HiOutlineUsers,
       },
     }),

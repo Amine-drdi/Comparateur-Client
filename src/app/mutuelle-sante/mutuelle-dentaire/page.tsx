@@ -26,7 +26,7 @@ export const dentaireSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Mutuelle dentaire : implants, couronnes et orthodontie | La Mutuelle de France",
+  title: "Mutuelle dentaire : implants & couronnes",
   description:
     "Comparez les meilleures mutuelles dentaire pour réduire votre reste à charge sur les implants, couronnes, orthodontie et soins dentaires. Devis gratuit.",
   keywords: [
@@ -52,6 +52,12 @@ export const metadata: Metadata = {
     siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: "https://www.lamutuelledefrance.fr/images/comparateur-mutuelle.jpg",
+        alt: "Comparateur de mutuelle santé",
+      },
+    ],
   },
   robots: {
     index: true,

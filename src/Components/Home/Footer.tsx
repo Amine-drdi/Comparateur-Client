@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import LOGO_SRC from "../../../public/Image/logo.png";
@@ -38,8 +38,9 @@ const LiensRapide: LinkItem[] = [
   { title: "Accueil", link: "/" },
  // { title: "Qui sommes-nous", link: "" },
  // { title: "Assurances", link: "s" },
-  { title: "Contact", link: "/Contact" },
-  { title: "Mentions légales", link: "" },
+  { title: "Contact", link: "/contact" },
+  { title: "Mentions légales", link: "/mentions-legales" },
+  { title: "Politique de confidentialité", link: "/politique-confidentialite" },
 ];
 
 const LiensBesoin: LinkBesoin[] = [
@@ -206,7 +207,7 @@ export default function Footer() {
                   href="tel:+33609999802"
                   className="text-slate-300 hover:text-blue-400 transition-colors text-xs md:text-sm"
                 >
-                 {/* +33 6 09 99 98 02*/}
+                  06 01 02 03 04
                 </a>
               </div>
             </div>
@@ -219,10 +220,10 @@ export default function Footer() {
               <div>
                 <p className="font-medium text-sm md:text-base">Email</p>
                 <a
-                  href="mailto:contact@mutuelle.fr"
+                  href="mailto:contact@lamutuelledefrance.fr"
                   className="text-slate-300 hover:text-orange-400 transition-colors text-xs md:text-sm break-all"
                 >
-                  {/*contact@mutuelle.fr*/}
+                  contact@lamutuelledefrance.fr
                 </a>
               </div>
             </div>
@@ -283,12 +284,6 @@ export default function Footer() {
                     href: "https://www.facebook.com/LaMutuelledeFrance",
                     color: "from-blue-500 to-blue-600",
                     hoverColor: "hover:text-blue-400",
-                  },
-                  {
-                    icon: FaLinkedin,
-                    href: "#",
-                    color: "from-blue-600 to-blue-700",
-                    hoverColor: "hover:text-blue-500",
                   },
                 ] as SocialItem[]
               ).map((social, index) => {

@@ -27,7 +27,7 @@ export default function ComprendreMonDevis() {
             Comment choisir l'offre la plus adaptée à vos besoins ?
           </h2>
           <p className="max-w-2xl mx-auto text-lg text-gray-700 leading-relaxed">
-            Un La Mutuelle De France vous informe en toute transparence sur vos remboursements, garanties et tarifs.
+            Notre comparateur vous informe en toute transparence sur vos remboursements, garanties et tarifs.
             Il est 100% gratuit, sans engagement, et totalement adapté à votre profil.
           </p>
         </div>

@@ -4,7 +4,7 @@ import { createSeoMetadata } from "@/lib/seo";
 //import { faqSchema } from "./metadata"; // Si vous avez mis les métadonnées dans un fichier à part
 
 export const metadata = createSeoMetadata({
-  title: "Comparateur de Mutuelle Santé : Comparez les Offres",
+  title: "Comparateur mutuelle santé : comparez",
   description:
     "Comparez des offres de mutuelle santé selon votre profil et les garanties recherchées, puis demandez un devis.",
   path: "/mutuelle-sante/comparateur-mutuelle",

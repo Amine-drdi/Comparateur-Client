@@ -49,7 +49,7 @@ export default function EtapesEtComparatif() {
         <div className="bg-blue-100 text-center p-6 rounded-full w-40 h-40 flex flex-col items-center justify-center shadow">
           <FaMousePointer className="text-blue-600 text-3xl mb-2" />
           <p className="text-sm font-semibold">Etape 3</p>
-          <p className="text-xs text-center">Je demande mes devis en un clic</p>
+          <p className="text-xs text-center">Demandez vos devis en un clic</p>
         </div>
       </div>
 

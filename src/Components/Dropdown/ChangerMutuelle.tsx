@@ -1,7 +1,6 @@
 // app/components/ChangerMutuelle.tsx
 "use client";
 import React from "react";
-import Script from "next/script";
 import Link from "next/link";
 import Image from "next/image";
 import NavbarA from "../Home/NavBar";
@@ -76,9 +75,9 @@ const images = {
   hero: "/images/changer-mutuelle-hero.jpeg", // Vous devrez créer/cette image
   comparatif: "/images/comparateur-mutuelle.jpg",
   garanties: "/images/comparateur-mutuelle.jpg",
-  etapes: "/images/demarches-sante.jpg",
+  etapes: "/images/demarches-sante.webp",
   erreurs: "/images/erreurs-mutuelle.jpg",
-  conseiller: "/images/conseiller-sante.jpg",
+  conseiller: "/images/conseiller-sante.webp",
   lettre: "/images/lettre-resiliation.jpg",
 };
 
@@ -303,39 +302,6 @@ function FAQItem({ q, a }: { q: string; a: React.ReactNode }) {
   );
 }
 
-/* ------------------------------ Données structurées SEO ------------------------------ */
-
-const changerMutuelleSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Puis-je changer de mutuelle sans attendre la date anniversaire ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui, absolument, si votre contrat a plus d'un an. Depuis la Loi Infra-annuelle (décembre 2020), vous n'êtes plus obligé d'attendre l'échéance. Avant 1 an, il faut un motif légitime (déménagement, changement professionnel)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Vais-je avoir une interruption de couverture ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Non, la continuité est garantie. Votre nouvelle mutuelle coordonne la résiliation avec l'ancienne pour que le basculement se fasse sans aucune période de carence (couvert jusqu'au soir par l'une, dès le lendemain par l'autre)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Est-ce que le changement est gratuit ?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui, c'est une procédure 100 % gratuite. Aucuns frais de résiliation ni pénalités ne peuvent être appliqués après 12 mois de contrat. Si vous passez par notre comparateur, nous gérons les démarches administratives gratuitement."
-      }
-    }
-  ]
-};
-
 /* ------------------------------ Page content ------------------------------ */
 
 export default function ChangerMutuellePage() {
@@ -343,11 +309,6 @@ export default function ChangerMutuellePage() {
 
   return (
     <>
-      <Script
-        id="faq-jsonld"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(changerMutuelleSchema) }}
-      />
       <NavbarA />
 
       <main className="min-h-screen bg-gradient-to-b from-blue-50/30 to-white">
@@ -381,7 +342,7 @@ export default function ChangerMutuellePage() {
                     <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.5-5.2-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z" />
                     </svg>
-                    Parler à un conseiller : 06 09 99 98 02
+                    Parler à un conseiller : 06 01 02 03 04
                   </SecondaryButton>
                 </div>
 
@@ -425,6 +386,7 @@ export default function ChangerMutuellePage() {
                     alt="Changer de mutuelle - Résiliation simplifiée"
                     width={500}
                     height={400}
+                    priority
                     className=" rounded-2xl sm:rounded-3xl"
                   />
                   <div className="absolute inset-0 " />

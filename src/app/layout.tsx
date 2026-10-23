@@ -1,4 +1,5 @@
 import FloatingButtons from "@/Components/Accueil/FloatingButtons.client";
+import BreadcrumbJsonLd from "@/Components/Seo/BreadcrumbJsonLd";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Analytics } from '@vercel/analytics/next';
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Comparez les meilleures mutuelles santé en 2 minutes. Jusqu’à 40 % d’économies sur vos garanties (Senior, Famille, Dentaire, Optique). Devis gratuit, immédiat et sans engagement.",
+    "Comparez les meilleures mutuelles santé selon votre profil : pas chère, senior, famille, TNS. Devis gratuit et sans engagement en 2 minutes.",
 
   keywords: [
     "mutuelle santé",
@@ -43,18 +44,6 @@ export const metadata: Metadata = {
     "meilleure mutuelle pas chère",
     "assurance santé mutuelle",
   ],
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-snippet": -1,
-      "max-image-preview": "large",
-      "max-video-preview": -1,
-    },
-  },
 
   openGraph: {
     title: "Comparateur Mutuelle Santé – Économisez Jusqu’à 40 %",
@@ -88,6 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr">
       <body>{children}
+        <BreadcrumbJsonLd />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -97,6 +87,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               name: "La Mutuelle de France",
               url: "https://www.lamutuelledefrance.fr",
               inLanguage: "fr-FR",
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "La Mutuelle de France",
+              url: "https://www.lamutuelledefrance.fr",
+              logo: "https://www.lamutuelledefrance.fr/logo.ico",
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+33609999802",
+                email: "contact@lamutuelledefrance.fr",
+                contactType: "customer service",
+                areaServed: "FR",
+                availableLanguage: "fr",
+              },
             }),
           }}
         />

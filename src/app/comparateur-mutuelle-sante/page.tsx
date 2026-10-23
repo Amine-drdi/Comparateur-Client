@@ -2,7 +2,7 @@ import PricingForm from "@/pages/Compare/PricingForm";
 import { createSeoMetadata } from "@/lib/seo";
 
 export const metadata = createSeoMetadata({
-  title: "Comparateur mutuelle santé : demandez votre devis en ligne | La Mutuelle de France",
+  title: "Comparateur mutuelle santé : devis en ligne",
   description:
     "Comparez les offres de mutuelle santé adaptées à votre situation. Obtenez un devis mutuelle gratuit, rapide et sans engagement pour votre budget.",
   path: "/comparateur-mutuelle-sante",

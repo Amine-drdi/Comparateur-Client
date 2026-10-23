@@ -2,9 +2,9 @@ import MutuelleOptiquePage from "@/Components/Dropdown/MutuelleOptique";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mutuelle optique : lunettes, lentilles et chirurgie laser | La Mutuelle de France",
+  title: "Mutuelle optique : lunettes & lentilles",
   description:
-    "Comparez les meilleures mutuelles optique pour réduire le coût de vos lunettes, lentilles et soins visuels. Trouvez la couverture la plus adaptée à votre budget.",
+    "Comparez les meilleures mutuelles optique pour réduire le coût de vos lunettes, lentilles et soins visuels. Devis gratuit en ligne.",
   keywords: [
     "mutuelle optique",
     "mutuelle optique pas chère",
@@ -28,6 +28,12 @@ export const metadata: Metadata = {
     siteName: "La Mutuelle de France",
     locale: "fr_FR",
     type: "website",
+    images: [
+      {
+        url: "https://www.lamutuelledefrance.fr/images/comparateur-mutuelle.jpg",
+        alt: "Comparateur de mutuelle santé",
+      },
+    ],
   },
   robots: {
     index: true,

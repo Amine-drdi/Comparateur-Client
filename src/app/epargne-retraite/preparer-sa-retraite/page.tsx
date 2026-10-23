@@ -2,9 +2,9 @@ import PreparerSaRetraite from "@/Components/epargne-retraite/PreparerSaRetraite
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Préparer sa Retraite : Guide et Solutions d’Épargne",
+  title: "Préparer sa retraite : guide et solutions",
   description:
-    "Comment anticiper la baisse de revenus ? Découvrez nos solutions pour préparer votre retraite : PER, Assurance Vie, Bilan Patrimonial. Audit gratuit par nos experts.",
+    "Anticipez la baisse de revenus à la retraite : PER, assurance vie, bilan patrimonial. Solutions d’épargne et audit gratuit par nos experts.",
   keywords: [
     "préparer sa retraite",
     "épargne retraite",
